@@ -1,0 +1,94 @@
+undone 
+natas 9  sql注入
+php函数
+分析复杂网站的拓扑结构
+
+Windows下文件路径可以是/\
+url,html则必须是/所以用/就完事儿了
+
+API 
+dom
+
+测试网站在手机浏览器上的表现
+
+想要做出一个怎样的产品（明确的目标）
+目标，重要性
+既然我们的目标是最重要的，我们应该把我们的精力放在借助已有的工具而不是从头开始。还有，我们有很多可以用来展示相片的web服务，所以如果只是为了传播我们的猫咪多么可爱而构建一个新网站，就太不值得在这上面下功夫了。
+能用别人的轮子就不要自己写，新手阶段除外。
+
+目标---实现目标需要做的事，网页需要的功能
+
+网络
+路由器的优点：
+十台电脑互联，每台电脑九个端口且九条网线
+或者中间加上路由器，每台电脑一个端口，路由器十个端口，十条网线
+
+client to server 
+whenever to a network 
+the datagram is loaded with the present router's ip
+so the return will be easy
+网页的组成文件：
+控制代码：html，css，js
+资源文件：image，video，audio
+
+网页webpage，网页文档，由HTML编写
+插入信息：样式（style），资源，交互（脚本）
+网站website，网页的集合
+网站是共享唯一域名的相互链接的网页的集合。给定网站的每个网页都提供了明确的链接—一般都是可点击文本的形式—允许用户从一个网页跳转到另一个网页。
+
+要访问网站，请在浏览器地址栏中输入域名，浏览器将显示网站的主要网页或主页。
+webserver网络服务器，可以托管一个或多个网站
+search engine 帮助找到其它网页的网站
+
+静态内容便于建立
+Python Django
+reinventing the wheel重新造轮子
+
+标签：A-z，0-9和-
+
+whois查询域名是否可用
+
+内链：网站的不同页面之间
+外链：不同网站之间
+传入链接：站在本网站的角度（提供给搜索引擎）
+
+anchor锚，或者说书签，网页内跳转
+
+提供链接后，网页内的可见文本会影响搜索引擎制作的索引
+进而影响用户能够通过什么关键词查找到用户
+锚点是跳转的符号，（#where）从来不会发送到服务器
+
+绝对url
+https://developer.mozilla.org/en-US/docs/Learn
+也是当前所处位置
+去掉协议，按照当前协议进行扩展
+//developer.mozilla.org/en-US/docs/Learn
+去掉域名
+注意有/
+/en-US/docs/Learn
+如果是en-US/docs/Learn
+会扩展为：https://developer.mozilla.org/en-US/docs/Learn/en-US/docs/Learn
+
+相对url
+Skills/Infrastructure/Understanding_URLs
+扩展为
+https://developer.mozilla.org/en-US/docs/Learn/Skills/Infrastructure/Understanding_URLs
+../CSS/display
+扩展为https://developer.mozilla.org/en-US/docs/CSS/display
+
+运行一个简单的本地http服务器
+C:\Users\user>cd Desktop/HTML/new
+
+C:\Users\user\Desktop\HTML\new>python -m http.server
+Serving HTTP on :: port 8000 (http://[::]:8000/) ...
+::1 - - [31/Oct/2020 11:12:09] "GET / HTTP/1.1" 200 -
+::1 - - [31/Oct/2020 11:12:10] code 404, message File not found
+::1 - - [31/Oct/2020 11:12:10] "GET /page/2 HTTP/1.1" 404 -
+localhost：8000
+默认情况下，这将在本地Web服务器上的端口8000上运行目录的内容。您可以通过转到localhost:8000Web浏览器中的URL来访问此服务器。在这里你会看到列出的目录的内容 - 点击你想运行的HTML文件。
+
+备份桌面内容？
+cd desktop
+python -m http.server 指定端口号
+localhost:port number
+

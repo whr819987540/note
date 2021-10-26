@@ -1,0 +1,102 @@
+http://www.biquge.info/modules/article/search.php?searchkey=%E5%A4%A9
+输入汉字""a字符串
+b = a.encode()     b'\xe5\xa4\xa9'
+len(b)
+c = hex(b[0])
+c[2]='e' c[3]='5'
+ 0         1
+['序号', '文章名称', '最新章节', '作者', '字数', '更新', '状态','链接']
+
+如果正则表达式没找到，需要加入异常处理
+
+info_list = []#存储表格内容，内部是字典
+2021年1月19日10:31:43
+小说爬取
+1.正则表达式，re.function（r.text）返回string
+对于标签，加了括号的，需要用group()
+2.爬取的一般操作
+try:
+	get
+	raise
+	enconding
+	print("ok")
+3.replace 是对string的操作
+4.向txt文件中写入汉字
+路径要全
+f = open('aaa.txt','wb')
+f.write(string.encoding('utf-8')
+f.close()
+
+soup.body.contents返回列表迭代器
+里面的元素只是body的直接子节点，深度为1
+descendents基于深度优先遍历
+
+
+<body>
+<p class="title" name="dromouse"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters; and their names were
+<a href="http://example.com/elsie" class="sister" id="link1"><!-- Elsie --></a>,
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+and they lived at the bottom of a well.</p>
+<p class="story">...</p>
+
+traceback
+异常处理：
+for i in list:
+	try:
+	except:
+		continue
+
+apparent_encoding需要解析页面本身，可能会要很多时间
+默认一个编码方式，进行赋值，然后根据需要进行改变
+同一个网站下的资源应该是相同的编码方式，也可以先get_htmltext得到apparent_encoding
+callback
+回调函数，用于接收请求后的返回信息，若没指定，则默认为parse()函数
+parse(self, response) ：解析的方法，每个初始URL完成下载后将被调用，调用的时候传入从每一个URL传回的Response对象来作为唯一参数，主要作用如下：
+
+负责解析返回的网页数据(response.body)，提取结构化数据(生成item)
+生成需要下一页的URL请求。
+将start_urls的值修改为需要爬取的第一个url
+self 参数是对类的当前实例的引用，用于访问属于该类的变量。
+class Student(Person):
+  def __init__(self, fname, lname):
+    Person.__init__(self, fname, lname)
+
+platform module
+platform.system()
+dir(module) return all the defined var names
+
+try except finally
+error or not, finally will be executed
+
+x = -1
+
+if x < 0:
+  raise Exception("Sorry, no numbers below zero")
+
+class fib(object):
+    def __init__(self,max):
+        self.max = max
+        self.n,self.a,self.b = 0,0,1
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.n<self.max:
+            tmp = self.b
+            self.a,self.b,self.n = self.b,self.a+self.b,self.n+1
+            return tmp
+        else:
+            raise StopIteration
+
+for i in fib(6):
+    print(i)
+
+def fib(max):
+    n,a,b = 0,0,1
+    while(n<max):
+        yield b
+        n,a,b = n+1,b,a+b
+for i in fib(6):
+    print(i)
+

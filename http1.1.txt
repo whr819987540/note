@@ -1,0 +1,15 @@
+GET /1300/list.htm HTTP/1.1
+HOST: www.hitwh.edu.cn
+
+MD5加密解密在线技术
+
+通用软件Web服务器
+Apache
+iplanet
+web服务器设备
+
+http1.1的特性：资源获取，虚拟主机，访问控制，日志记录，配置，监视，性能
+
+在客户端进行调试，模拟http：telnet
+在服务器端进行调试，模拟http响应报文：type-o-server
+

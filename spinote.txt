@@ -1,0 +1,65 @@
+标准库
+发行版anaconda
+ 
+命令行
+python to enter 
+exit（）  to quit
+
+布尔值---True，False
+
+类型转换
+int（9.9） 9
+int（“933”） 933
+int （True） 1
+int （False） 0
+
+float（“3.3”） 3.3
+float（“4”） 4.0
+float（“True”） 1.0
+
+str（33）  ‘33’
+str（44.3） ‘44.3’
+str(True)  'True'
+
+bool(44)  True
+bool(0)  False
+bool(0.0) False
+bool(0.1) True
+bool("") False
+bool(" ")True
+
+
+
+字典的copy
+dict1 = {'name' : 'your father' , 'seq' : list(range(1,5))}
+dict2 = dict1
+dict3 = dict1.copy()
+第一个测试，删除一级目录
+del dict1
+发现dict1和dict2的内容一样，dict3未收到影响
+
+第二个测试，修改一级目录
+dict1['name'] = 'you'
+dict1，dict2保持同步，dict3未发生变化
+
+第三个测试，删除二级目录
+del dict1['seq']
+dict3未受到影响
+
+第四个测试，修改二级目录
+dict3与dict1,2保持一致
+
+集合中增加元素
+add 不执行set这种切分工作
+update会
+所以增加的是序列的话，结果存在差别
+
+集合中删除元素
+remove如果集合中没有，会报错
+discard如果没有，不会报错
+pop随即删除
+
+身份运算符
+看两个变量名（别名）是否是同一个变量的引用
+
+
