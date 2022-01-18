@@ -1,3 +1,5 @@
+
+
 ```mysql
 （1）建立用户tom,创建数据库ST，使得tom拥有数据库ST
 create user tom with password '123456'

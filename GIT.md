@@ -928,6 +928,1431 @@ The key's randomart image is:
 
 ```bash
 # git仓库配置
-git
+git init
+git add *
+git commit -m "2021.10.26"
+# 测试ssh
+ssh -T git@gitee.com
+
+C:\Users\user\Desktop\note>ssh -T git@gitee.com
+Hi 王浩然! You've successfully authenticated, but GITEE.COM does not provide shell access.
+Connection to gitee.com closed.
+
+# 连接远程仓库
+git remote add origin git@gitee.com:hit_whr/my_md_note.git
+# 上传
+git push -u origin master -f
+# 如果不成功，先git pull master试试
 ```
+
+
+
+# youtube视频教程
+
+## 配置文件
+
+### 三个等级
+
+- system，所有用户下的所有仓库
+
+![image-20220106220402069](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106220402069.png)
+
+- global，当前用户的所有仓库
+
+![image-20220106220916531](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106220916531.png)
+
+这里的默认分支为main分支，是一般习惯。（之前用的master分支）
+
+
+
+- local，当前仓库
+
+
+
+### 修改
+
+#### 命令行
+
+```bash
+C:\Users\user>git config --global --list
+user.name=whr
+user.email=819987540@qq.com
+user.main=819987540@qq.com
+core.editor=vim
+init.defaultbranch=main
+
+C:\Users\user>git config --global user.name "test 1"
+
+C:\Users\user>git config --global --list
+user.name=test 1
+user.email=819987540@qq.com
+user.main=819987540@qq.com
+core.editor=vim
+init.defaultbranch=main
+
+C:\Users\user>git config --global user.name whr
+
+C:\Users\user>git config --global --list
+user.name=whr
+user.email=819987540@qq.com
+user.main=819987540@qq.com
+core.editor=vim
+init.defaultbranch=main
+```
+
+
+
+#### 编辑器
+
+![image-20220106221330696](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106221330696.png)
+
+
+
+![image-20220106221343507](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106221343507.png)
+
+### 一个细节
+
+windows上，换行是两 个符号/r/n。
+
+而类unix上是/n，所以存在不一致的问题。
+
+```bash
+C:\Users\user>git config --system --list 
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+
+git config --system autocrlf true //windows
+git config --system autocrkf input //max/linux
+```
+
+
+
+## 删除文件
+
+### git ls-files
+
+删除文件（working directory）后，staging area的文件不会被删除。
+
+需要再次git add
+
+```bash
+(base) PS E:\idm下载\test_git> ls
+
+
+    目录: E:\idm下载\test_git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2022/1/6     22:58             16 1.txt
+-a----          2022/1/6     23:22             14 2.txt
+
+
+(base) PS E:\idm下载\test_git> git ls-files
+1.txt
+2.txt
+(base) PS E:\idm下载\test_git> rm .\2.txt
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) PS E:\idm下载\test_git> git ls-files
+1.txt
+2.txt
+(base) PS E:\idm下载\test_git> git add 2.txt
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    2.txt
+
+(base) PS E:\idm下载\test_git> git ls-files
+1.txt
+```
+
+
+
+### git ls-files --cached
+
+查看staging area的文件id
+
+```bash
+(base) PS E:\idm下载\test_git> git ls-files --stage .\restore_test.txt
+100644 badac0a8f8115c84b047b7f06380b8d302cbc923 0       restore_test.txt
+(base) PS E:\idm下载\test_git> git show badac0a8f8115c84b047b7f06380b8d302cbc923
+first write
+secode write
+```
+
+
+
+
+
+### git rm
+
+> 将文件从working directory和staging area中删除
+
+上面实现一个文件的删除需要
+
+- 删除文件，rm
+- 提交到staging area，git add
+- 提交到repository，git commit
+
+可以用一行命令git rm实现
+
+```bash
+(base) PS E:\idm下载\test_git> git ls-files
+1.txt
+(base) PS E:\idm下载\test_git> git rm .\1.txt
+rm '1.txt'
+(base) PS E:\idm下载\test_git> git ls-files
+```
+
+ 
+
+## 重命名文件
+
+重命名文件后，staging area里面的文件不会被重命名，因为git不会自动track一个文件的修改。
+
+
+
+修改文件名后，stating area中track的还是1.txt
+
+```bash
+(base) PS E:\idm下载\test_git> ls
+
+
+    目录: E:\idm下载\test_git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2022/1/6     23:43             12 1.txt
+
+
+(base) PS E:\idm下载\test_git> mv .\1.txt 11.txt
+(base) PS E:\idm下载\test_git> git ls-files
+1.txt
+```
+
+
+
+但由于此时1.txt已经没了，所以1.txt显示deleted，而11.txt显示untracked
+
+```bash
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   1.txt
+        deleted:    2.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    1.txt
+        
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        11.txt
+```
+
+
+
+先add 11.txt。显然此时1.txt还在staging area
+
+```bash
+(base) PS E:\idm下载\test_git> git add .\11.txt
+(base) PS E:\idm下载\test_git> git ls-files
+1.txt
+11.txt
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   1.txt
+        new file:   11.txt
+        deleted:    2.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    1.txt
+```
+
+
+
+再add 1.txt
+
+```bash
+(base) PS E:\idm下载\test_git> git add .\1.txt
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    1.txt
+        new file:   11.txt
+        deleted:    2.txt
+
+(base) PS E:\idm下载\test_git> git ls-files
+11.txt
+```
+
+
+
+最后结果
+
+```bash
+(base) PS E:\idm下载\test_git> git commit
+[main d0d0d1b] rename the files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 1.txt
+ create mode 100644 11.txt
+ delete mode 100644 2.txt
+```
+
+![image-20220106235238248](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106235238248.png)
+
+
+
+### git mv
+
+直接对staging area的文件进行操作
+
+```bash
+(base) PS E:\idm下载\test_git> ls
+
+
+    目录: E:\idm下载\test_git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2022/1/6     23:43             12 13.txt
+
+
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) PS E:\idm下载\test_git> git ls-files
+13.txt
+(base) PS E:\idm下载\test_git> git mv .\13.txt 14.txt
+
+
+
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    13.txt -> 14.txt
+
+
+(base) PS E:\idm下载\test_git> git ls-files
+14.txt
+```
+
+
+
+## .gitignore
+
+在使用git status显示track和untrack信息时，忽略某个文件夹下的文件或者特定类型或者某个文件。
+
+### windows上的编码问题
+
+```bash
+(base) PS E:\idm下载\test_git> ls
+(base) PS E:\idm下载\test_git> echo 1 > 1.sh
+(base) PS E:\idm下载\test_git> echo 2 > 2.sh
+(base) PS E:\idm下载\test_git> echo 1.sh > .gitignore
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        1.sh
+        2.sh
+```
+
+
+
+![image-20220107165849633](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107165849633.png)
+
+
+
+将编码修改为utf-8后
+
+```bash
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        2.sh
+```
+
+
+
+### 向.gitignore文件添加内容
+
+向.gitignore文件添加内容，并不会马上生效，因为如果某个文件被提交到了staging area，即使修改了.gitignore，git还是会track某个文件。
+
+所以需要将文件移出staging area，而不移出working directory。
+
+
+
+现在想将2.sh也被忽略。
+
+```bash
+(base) PS E:\idm下载\test_git> ls
+
+
+    目录: E:\idm下载\test_git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2022/1/7     16:56              6 .gitig
+                                                  nore
+-a----          2022/1/7     11:23              8 1.sh
+-a----          2022/1/7     11:23              8 2.sh
+
+
+(base) PS E:\idm下载\test_git> git ls-files
+.gitignore
+2.sh
+```
+
+![image-20220107170435353](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107170435353.png)
+
+
+
+首先修改.gitignore文件，发现2.sh还是在staging area。需要用git rm --cached将其移出
+
+![image-20220107170458044](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107170458044.png)
+
+```bash
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) PS E:\idm下载\test_git> git ls-files
+.gitignore
+2.sh
+```
+
+
+
+#### git rm --cached
+
+git rm --cached -r
+
+将文件夹的内容递归的从staging area中移出
+
+```bash
+(base) PS E:\idm下载\test_git> git rm -h
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+```
+
+
+
+```bash
+(base) PS E:\idm下载\test_git> git rm --cached 2.sh
+rm '2.sh'
+(base) PS E:\idm下载\test_git> git add .\.gitignore
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+        deleted:    2.sh
+(base) PS E:\idm下载\test_git> ls
+
+
+    目录: E:\idm下载\test_git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2022/1/7     17:04             10 .gitig
+                                                  nore
+-a----          2022/1/7     11:23              8 1.sh
+-a----          2022/1/7     11:23              8 2.sh
+
+
+(base) PS E:\idm下载\test_git> git ls-files
+.gitignore
+```
+
+
+
+## 为项目自动生成.gitignore文件
+
+### api配置
+
+以windoews为例
+
+在powershell中输入$profile获得路径，然后将下面的内容粘贴进去。
+
+```bash
+#For PowerShell v3
+Function gig {
+  param(
+    [Parameter(Mandatory=$true)]
+    [string[]]$list
+  )
+  $params = ($list | ForEach-Object { [uri]::EscapeDataString($_) }) -join ","
+  Invoke-WebRequest -Uri "https://www.toptal.com/developers/gitignore/api/$params" | select -ExpandProperty content | Out-File -FilePath $(Join-Path -path $pwd -ChildPath ".gitignore") -Encoding ascii
+}
+```
+
+
+
+### 使用
+
+windows里面的命令叫做gig，其他的叫做gi。
+
+第一个参数是系统名，第二个参数编程语言。
+
+```bash
+(base) PS E:\idm下载\test_git> ls                                                                                                                                                                                                               
+    目录: E:\idm下载\test_git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2022/1/7     17:04             10 .gitignore
+-a----          2022/1/7     11:23              8 1.sh
+-a----          2022/1/7     11:23              8 2.sh
+
+
+(base) PS E:\idm下载\test_git> gig windows,python
+(base) PS E:\idm下载\test_git> ls
+
+
+    目录: E:\idm下载\test_git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2022/1/7     18:03           3317 .gitignore
+-a----          2022/1/7     11:23              8 1.sh
+-a----          2022/1/7     11:23              8 2.sh
+```
+
+
+
+## git status -s
+
+第一列是文件在staging area的状态，第二列是文件在working directory的状态。
+
+
+
+```bash
+# 因为没有track该文件
+(base) PS E:\idm下载\test_git> echo erjiljgler > 3.sh
+(base) PS E:\idm下载\test_git> git status -s
+?? 3.sh
+
+# add后，在staging area显示A（added）
+(base) PS E:\idm下载\test_git> git add .\3.sh
+(base) PS E:\idm下载\test_git> git status -s
+A  3.sh
+
+# 2.sh之前就在staging area，现在继续修改，所以在working directory显示M（modified）
+(base) PS E:\idm下载\test_git> echo gjilerg >> 2.sh
+(base) PS E:\idm下载\test_git> git status -s
+ M 2.sh
+A  3.sh
+
+# add后，working directory被提交，所以working directory不显示
+(base) PS E:\idm下载\test_git> git add .\2.sh
+(base) PS E:\idm下载\test_git> git status -s
+M  2.sh
+A  3.sh
+
+# 继续在工作区修改2.sh
+(base) PS E:\idm下载\test_git> echo reilj >> 2.sh
+(base) PS E:\idm下载\test_git> git status -s
+MM 2.sh
+A  3.sh
+
+# 提交到staging area
+(base) PS E:\idm下载\test_git> git status -s
+MM 2.sh
+A  3.sh
+(base) PS E:\idm下载\test_git> git add *
+(base) PS E:\idm下载\test_git> git status -s
+M  2.sh
+A  3.sh
+(base) PS E:\idm下载\test_git> git ls-files
+.gitignore
+2.sh
+3.sh
+
+# commit
+(base) PS E:\idm下载\test_git> git commit -m "modify 2.sh ,add 3.sh"
+[main 173d659] modify 2.sh ,add 3.sh
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.sh
+(base) PS E:\idm下载\test_git> git status -s
+(base) PS E:\idm下载\test_git>
+```
+
+
+
+## git diff --staged
+
+查看staging area的文件和上一次commit文件的区别
+
+```bash
+(base) PS E:\idm下载\test_git> echo egjril >> 2.sh
+(base) PS E:\idm下载\test_git> echo gjrlig >> 3.sh
+(base) PS E:\idm下载\test_git> git status -s
+ M 2.sh
+ M 3.sh
+(base) PS E:\idm下载\test_git> git add *
+
+(base) PS E:\idm下载\test_git> git diff --staged
+diff --git a/2.sh b/2.sh
+index c3aaea0..2c8e611 100644
+Binary files a/2.sh and b/2.sh differ
+diff --git a/3.sh b/3.sh
+index 3cf4b3a..015431f 100644
+Binary files a/3.sh and b/3.sh differ
+
+(base) PS E:\idm下载\test_git> git mv 2.sh 2.txt
+(base) PS E:\idm下载\test_git> git mv 3.sh 3.txt
+
+(base) PS E:\idm下载\test_git> git diff --staged
+diff --git a/2.sh b/2.txt
+similarity index 69%
+rename from 2.sh
+rename to 2.txt
+index c3aaea0..2c8e611 100644
+Binary files a/2.sh and b/2.txt differ
+diff --git a/3.sh b/3.txt
+similarity index 59%
+rename from 3.sh
+rename to 3.txt
+index 3cf4b3a..015431f 100644
+Binary files a/3.sh and b/3.txt differ
+```
+
+
+
+## git diff
+
+查看working directory和staging area的区别。
+
+
+
+## git difftool
+
+### 配置环境
+
+```bash
+# 将编辑器配置为vscode
+(base) PS E:\idm下载\test_git> git config --global core.editor "code --wait"
+
+# 将difftool配置为vscode
+git config --global diff.tool vscode
+git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+注意此处的LOCAL REMOTE不一定添加成功，注意手动修改一下。
+```
+
+
+
+### git difftool
+
+查看working directory和staging area的区别。
+
+![image-20220107192250217](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107192250217.png)
+
+
+
+左侧是staging area（旧版本），右侧是working directory（新版本）
+
+![image-20220107192339153](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107192339153.png)
+
+
+
+### git difftool --staged
+
+ 左侧是repository（旧版本），右侧是staging area（新版本）
+
+```bash
+(base) PS E:\idm下载\test_git> echo 2222igler >> 2.js
+(base) PS E:\idm下载\test_git> git add .\2.js
+(base) PS E:\idm下载\test_git> git difftool
+(base) PS E:\idm下载\test_git> git difftool --staged
+
+Viewing (1/1): '2.js'
+Launch 'vscode' [Y/n]? y
+(base) PS E:\idm下载\test_git> git difftool --staged
+
+Viewing (1/1): '2.js'
+Launch 'vscode' [Y/n]? y
+```
+
+
+
+## git log
+
+查看commit的历史记录。
+
+每次commit用一个40字符的id来标识
+
+```bash
+(base) PS E:\idm下载\test_git> git log
+commit 02d4ad1dc463e92cdefc81ea77b986d5eac3432f (HEAD -> main)
+Author: whr <819987540@qq.com>
+Date:   Fri Jan 7 19:26:36 2022 +0800
+
+    modify 2.sh
+```
+
+
+
+### git log --oneline
+
+简洁地显示历史记录。
+
+```bash
+(base) PS E:\idm下载\test_git> git log --oneline
+02d4ad1 (HEAD -> main) modify 2.sh
+3e70560 (origin/main) nothing
+db5ad5d rename
+6ad9e69 rename
+173d659 modify 2.sh ,add 3.sh
+6d4c010 git ignore include
+49f85e4 gitignore include
+80d0df8 add git ignore
+cc7398e ???
+bf7e32c clear all
+885da1d git mv
+d0d0d1b rename the files
+a9c9de5 this is a real test
+6a503a2 this is a tset for commit phrase
+8342021 delete
+58e0281 3.0
+c4e1bef Create 2.txt
+d48b12f 1.0
+```
+
+
+
+上面的历史记录默认以时间倒序排列，看起来可能不适。
+
+```bash
+(base) PS E:\idm下载\test_git> git log --oneline --reverse
+d48b12f 1.0
+c4e1bef Create 2.txt
+58e0281 3.0
+8342021 delete
+6a503a2 this is a tset for commit phrase
+a9c9de5 this is a real test
+d0d0d1b rename the files
+885da1d git mv
+bf7e32c clear all
+cc7398e ???
+80d0df8 add git ignore
+49f85e4 gitignore include
+6d4c010 git ignore include
+173d659 modify 2.sh ,add 3.sh
+6ad9e69 rename
+db5ad5d rename
+3e70560 (origin/main) nothing
+02d4ad1 (HEAD -> main) modify 2.sh
+```
+
+
+
+## git show
+
+查看某个id的文件的内容。
+
+查看某个id的目录的内容。
+
+### git show commit-id
+
+显示某次commit与上次的区别。
+
+```bash
+(base) PS E:\idm下载\test_git> git log --oneline --reverse
+d48b12f 1.0
+c4e1bef Create 2.txt
+58e0281 3.0
+8342021 delete
+6a503a2 this is a tset for commit phrase
+a9c9de5 this is a real test
+d0d0d1b rename the files
+885da1d git mv
+bf7e32c clear all
+cc7398e ???
+80d0df8 add git ignore
+49f85e4 gitignore include
+6d4c010 git ignore include
+173d659 modify 2.sh ,add 3.sh
+6ad9e69 rename
+db5ad5d rename
+3e70560 (origin/main) nothing
+02d4ad1 (HEAD -> main) modify 2.sh
+(base) PS E:\idm下载\test_git> git show 173d659
+commit 173d65966376170397af10aab59a13004f0877ae
+Author: whr <819987540@qq.com>
+Date:   Fri Jan 7 18:19:48 2022 +0800
+
+    modify 2.sh ,add 3.sh
+
+diff --git a/2.sh b/2.sh
+index c7250cb..c3aaea0 100644
+Binary files a/2.sh and b/2.sh differ
+diff --git a/3.sh b/3.sh
+new file mode 100644
+index 0000000..3cf4b3a
+Binary files /dev/null and b/3.sh differ
+```
+
+
+
+### git show HEAD~n
+
+```bash
+(base) PS E:\idm下载\test_git> git show HEAD~3
+commit 6ad9e690f65d070e56d4a9f068be2ce499b5b0ff
+Author: whr <819987540@qq.com>
+Date:   Fri Jan 7 18:24:48 2022 +0800
+
+    rename
+
+diff --git a/2.sh b/2.txt
+similarity index 69%
+rename from 2.sh
+rename to 2.txt
+index c3aaea0..2c8e611 100644
+Binary files a/2.sh and b/2.txt differ
+diff --git a/3.sh b/3.txt
+similarity index 59%
+rename from 3.sh
+rename to 3.txt
+index 3cf4b3a..015431f 100644
+Binary files a/3.sh and b/3.txt differ
+```
+
+
+
+### git show file-id
+
+#### git ls-tree
+
+blob代指文件，tree代指目录。
+
+##### 非递归
+
+```bash
+(base) PS E:\idm下载\test_git> git ls-tree HEAD~3
+100644 blob 084666b595d71b9c3e1955c35b8128ca9ab9a67c    .gitignore
+100644 blob 2c8e6110a33838119ffc37ee6b20f3904819878d    2.txt
+100644 blob 015431f7c3cdd92b19eac20cd894b9681359f2a3    3.txt
+```
+
+
+
+##### 递归
+
+```bash
+(base) PS E:\idm下载\test_git> git ls-tree -r HEAD
+100644 blob 084666b595d71b9c3e1955c35b8128ca9ab9a67c    .gitignore
+100644 blob 9ac4ed1c5aab3e318817fad6b5b0ec3a020bd20b    2.js
+100644 blob 015431f7c3cdd92b19eac20cd894b9681359f2a3    3.js
+100644 blob 9e7eb5bf8c97ea845f736424a388e2b63ba99ddb    test_dir/dd.txt
+100644 blob a8a940627d132695a9769df883f85992f0ff4a43    test_dir/tt.txt
+```
+
+
+
+
+
+#### file
+
+现在来查看某个文件的内容
+
+```bash
+(base) PS E:\idm下载\test_git> git show 084666b595d71b9c3e1955c35b8128ca9ab9a67c
+1.sh
+```
+
+
+
+#### dir
+
+现在来查看某个目录的内容
+
+##### git 不会track某个空目录
+
+可以看到，新建了某个目录，但是git并没有显示untracked。
+
+```bash
+(base) PS E:\idm下载\test_git> ls
+
+
+    目录: E:\idm下载\test_git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2022/1/7     18:13              6 .gitign
+                                                  ore
+-a----          2022/1/7     11:23              8 1.sh
+-a----          2022/1/7     19:29            134 2.js
+-a----          2022/1/7     18:22             42 3.js
+
+
+(base) PS E:\idm下载\test_git> mkdir test_dir
+
+
+    目录: E:\idm下载\test_git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2022/1/8      9:36                test_di
+                                                  r
+
+(base) PS E:\idm下载\test_git> git add .\test_dir\
+(base) PS E:\idm下载\test_git> git ls-files
+.gitignore
+2.js
+3.js
+(base) PS E:\idm下载\test_git\test_dir> cd test_dir
+(base) PS E:\idm下载\test_git\test_dir> ls
+(base) PS E:\idm下载\test_git\test_dir> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+
+
+
+加入某个文件后。
+
+```bash
+(base) PS E:\idm下载\test_git\test_dir> cd ../
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test_dir/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) PS E:\idm下载\test_git> git ls-files
+.gitignore
+2.js
+3.js
+(base) PS E:\idm下载\test_git> git add *
+(base) PS E:\idm下载\test_git> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test_dir/dd.txt
+        new file:   test_dir/tt.txt
+
+(base) PS E:\idm下载\test_git> git ls-files
+.gitignore
+2.js
+3.js
+test_dir/dd.txt
+test_dir/tt.txt
+```
+
+
+
+##### test
+
+```bash
+(base) PS E:\idm下载\test_git> git log --oneline
+fdb0cb3 (HEAD -> main) add dir/files
+e701b1e add a test dir
+02d4ad1 modify 2.sh
+3e70560 (origin/main) nothing
+db5ad5d rename
+6ad9e69 rename
+173d659 modify 2.sh ,add 3.sh
+6d4c010 git ignore include
+49f85e4 gitignore include
+80d0df8 add git ignore
+cc7398e ???
+bf7e32c clear all
+885da1d git mv
+d0d0d1b rename the files
+a9c9de5 this is a real test
+6a503a2 this is a tset for commit phrase
+8342021 delete
+58e0281 3.0
+c4e1bef Create 2.txt
+d48b12f 1.0
+(base) PS E:\idm下载\test_git> git ls-tree fdb0cb3
+100644 blob 084666b595d71b9c3e1955c35b8128ca9ab9a67c    .gitignore
+100644 blob 9ac4ed1c5aab3e318817fad6b5b0ec3a020bd20b    2.js
+100644 blob 015431f7c3cdd92b19eac20cd894b9681359f2a3    3.js
+040000 tree 798c346843041d7b8eba722614d5991a799dfc89    test_dir
+(base) PS E:\idm下载\test_git> git show 798c346843041d
+tree 798c346843041d
+
+dd.txt
+tt.txt
+```
+
+
+
+```bash
+(base) PS E:\idm下载\test_git> git ls-tree -r HEAD
+100644 blob 084666b595d71b9c3e1955c35b8128ca9ab9a67c    .gitignore
+100644 blob 9ac4ed1c5aab3e318817fad6b5b0ec3a020bd20b    2.js
+100644 blob 015431f7c3cdd92b19eac20cd894b9681359f2a3    3.js
+100644 blob 9e7eb5bf8c97ea845f736424a388e2b63ba99ddb    test_dir/dd.txt
+100644 blob a8a940627d132695a9769df883f85992f0ff4a43    test_dir/tt.txt
+(base) PS E:\idm下载\test_git> git show 798c346843041d7b8eba722614d5991a799dfc89
+tree 798c346843041d7b8eba722614d5991a799dfc89
+
+dd.txt
+tt.txt
+(base) PS E:\idm下载\test_git> git show a8a940627d132695a9769df883f85992f0ff4a43
+this is a test
+(base) PS E:\idm下载\test_git> git show a8a940627d132695a9769df883f85992f0ff4a43
+this is a test
+(base) PS E:\idm下载\test_git> git show 9e7eb5bf8c97ea845f736424a388e2b63ba99ddb
+this is another test
+```
+
+
+
+## git restore
+
+### git restore
+
+作用：将staging area中的内容恢复到working directory，
+
+- 文件内容初始化
+
+```bash
+(base) PS E:\idm下载\test_git> code .\a.txt
+(base) PS E:\idm下载\test_git> cat .\a.txt
+in working directory, unstaged
+(base) PS E:\idm下载\test_git> git status -s
+M  restore_test.txt
+?? a.txt
+?? null.txt
+```
+
+- 提交到staging area
+
+```bash
+(base) PS E:\idm下载\test_git> git add .\a.txt
+(base) PS E:\idm下载\test_git> git status -s
+A  a.txt
+M  restore_test.txt
+?? null.txt
+```
+
+- 提交到repository
+
+```bash
+(base) PS E:\idm下载\test_git> git commit -m "first commit of a.txt"
+[main 713429d] first commit of a.txt
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 a.txt
+(base) PS E:\idm下载\test_git> git status -s
+?? null.txt
+(base) PS E:\idm下载\test_git> cat .\a.txt
+in working directory, unstaged
+```
+
+- 在工作区再次修改
+
+```bash
+(base) PS E:\idm下载\test_git> code .\a.txt
+(base) PS E:\idm下载\test_git> cat .\a.txt
+in working directory, unstaged
+in repository, try to modify again
+```
+
+- git restore恢复
+
+  - working directory
+
+    恢复到了未修改working directory时的状态
+
+    ```bash
+    (base) PS E:\idm下载\test_git> git restore .\a.txt
+    (base) PS E:\idm下载\test_git> git status -s
+    ?? null.txt
+    (base) PS E:\idm下载\test_git> cat .\a.txt
+    in working directory, unstaged
+    ```
+
+    
+
+  - staging area
+
+    - 向a.txt添加一行，然后再commit
+
+      ```powershell
+      (base) PS E:\idm下载\test_git> cat .\a.txt
+      in working directory, unstaged
+      (base) PS E:\idm下载\test_git> code .\a.txt
+      (base) PS E:\idm下载\test_git> git add .\a.txt
+      (base) PS E:\idm下载\test_git> git commit -m "commit a.txt"
+      [main b778e97] commit a.txt
+       1 file changed, 2 insertions(+), 1 deletion(-)
+      (base) PS E:\idm下载\test_git> git show head
+      commit b778e97c239b087b569d93429802c8f1d3792da6 (HEAD -> main)
+      Author: whr <819987540@qq.com>
+      Date:   Sat Jan 8 10:50:27 2022 +0800
+      
+          commit a.txt
+      
+      diff --git a/a.txt b/a.txt
+      index 2248ed4..bc3b1a0 100644
+      --- a/a.txt
+      +++ b/a.txt
+      @@ -1 +1,2 @@
+      -in working directory, unstaged
+      \ No newline at end of file
+      +in working directory, unstaged
+      +in repository, try to commit again
+      \ No newline at end of file
+      ```
+
+    - 再次修改a.txt
+
+      ```powershell
+      (base) PS E:\idm下载\test_git> code .\a.txt
+      (base) PS E:\idm下载\test_git> cat .\a.txt
+      in working directory, unstaged
+      in repository, try to commit again
+      in working directory, modify again
+      (base) PS E:\idm下载\test_git> git status -s
+       M a.txt
+      ?? null.txt
+      ```
+
+    - 提交到staging area，并查看内容
+
+      ```powershell
+      (base) PS E:\idm下载\test_git> git add .\a.txt
+      (base) PS E:\idm下载\test_git> git ls-files --stage .\a.txt
+      100644 7ba8f83100082059cd7512501a421d5dbccf9dee 0       a.txt
+      (base) PS E:\idm下载\test_git> git show 7ba8f83100082059cd7512501a421d5dbccf9dee
+      in working directory, unstaged
+      in repository, try to commit again
+      in working directory, modify again
+      ```
+
+    - 再次修改
+
+      ```powershell
+      (base) PS E:\idm下载\test_git> code .\a.txt
+      (base) PS E:\idm下载\test_git> cat .\a.txt
+      in working directory, unstaged
+      in repository, try to commit again
+      in working directory, modify again
+      in working directory, try to restore
+      (base) PS E:\idm下载\test_git> git status -s
+      MM a.txt
+      ?? null.txt
+      ```
+
+    - 恢复
+
+      - working directory
+
+        是之前staging area的内容
+
+        ```powershell
+        (base) PS E:\idm下载\test_git> git restore .\a.txt
+        (base) PS E:\idm下载\test_git> cat .\a.txt
+        in working directory, unstaged
+        in repository, try to commit again
+        in working directory, modify again
+        ```
+
+      - staging area
+
+        未发生变化（不从repository中获得内容）
+
+        工作区的M标识消失
+
+        ```powershell
+        (base) PS E:\idm下载\test_git> git ls-files --stage .\a.txt
+        100644 7ba8f83100082059cd7512501a421d5dbccf9dee 0       a.txt
+        (base) PS E:\idm下载\test_git> git show 7ba8f83100082059cd7512501a421d5dbccf9dee
+        in working directory, unstaged
+        in repository, try to commit again
+        in working directory, modify again
+        (base) PS E:\idm下载\test_git> git status -s
+        M  a.txt
+        ?? null.txt
+        ```
+
+      - repository
+
+        ```bash
+        (base) PS E:\idm下载\test_git> git show head
+        commit b778e97c239b087b569d93429802c8f1d3792da6 (HEAD -> main)
+        Author: whr <819987540@qq.com>
+        Date:   Sat Jan 8 10:50:27 2022 +0800
+        
+            commit a.txt
+        
+        diff --git a/a.txt b/a.txt
+        index 2248ed4..bc3b1a0 100644
+        --- a/a.txt
+        +++ b/a.txt
+        @@ -1 +1,2 @@
+        -in working directory, unstaged
+        \ No newline at end of file
+        +in working directory, unstaged
+        +in repository, try to commit again
+        \ No newline at end of fil
+        ```
+
+
+
+### git restore --stage
+
+- 修改
+
+  - working directory
+
+    ```powershell
+    (base) PS E:\idm下载\test_git> cat .\a.txt
+    in working directory, unstaged
+    in repository, try to commit again
+    in working directory, modify again
+    in working directory, try to use git restore --stage
+    (base) PS E:\idm下载\test_git> git status -s
+    MM a.txt
+    ?? null.txt
+    ```
+
+    
+
+  - staging area
+
+    ```powershell
+    (base) PS E:\idm下载\test_git> git ls-files --stage .\a.txt
+    100644 7ba8f83100082059cd7512501a421d5dbccf9dee 0       a.txt
+    (base) PS E:\idm下载\test_git> git show 7ba8f83100082059cd7512501a421d5dbccf9dee
+    in working directory, unstaged
+    in repository, try to commit again
+    in working directory, modify again
+    ```
+
+    
+
+  - repository
+
+    ```powershell
+    (base) PS E:\idm下载\test_git> git log --oneline
+    b778e97 (HEAD -> main) commit a.txt
+    713429d first commit of a.txt
+    825258a restore test
+    fdb0cb3 add dir/files
+    e701b1e add a test dir
+    02d4ad1 modify 2.sh
+    3e70560 (origin/main) nothing
+    db5ad5d rename
+    6ad9e69 rename
+    173d659 modify 2.sh ,add 3.sh
+    6d4c010 git ignore include
+    49f85e4 gitignore include
+    80d0df8 add git ignore
+    cc7398e ???
+    bf7e32c clear all
+    885da1d git mv
+    d0d0d1b rename the files
+    a9c9de5 this is a real test
+    6a503a2 this is a tset for commit phrase
+    8342021 delete
+    58e0281 3.0
+    c4e1bef Create 2.txt
+    d48b12f 1.0
+    (base) PS E:\idm下载\test_git> git show b778e97
+    commit b778e97c239b087b569d93429802c8f1d3792da6 (HEAD -> main)
+    Author: whr <819987540@qq.com>
+    Date:   Sat Jan 8 10:50:27 2022 +0800
+    
+        commit a.txt
+    
+    diff --git a/a.txt b/a.txt
+    index 2248ed4..bc3b1a0 100644
+    --- a/a.txt
+    +++ b/a.txt
+    @@ -1 +1,2 @@
+    -in working directory, unstaged
+    \ No newline at end of file
+    +in working directory, unstaged
+    +in repository, try to commit again
+    \ No newline at end of file
+    ```
+
+    
+
+- git restore --stage
+
+  - working directory
+
+    内容不变
+
+    ```powershell
+    (base) PS E:\idm下载\test_git> git restore --stage .\a.txt
+    (base) PS E:\idm下载\test_git> cat .\a.txt
+    in working directory, unstaged
+    in repository, try to commit again
+    in working directory, modify again
+    in working directory, try to use git restore --stage
+    ```
+
+    
+
+  - staging area
+
+    用repository中最近一次commit的内容替换（默认）
+
+    如果repository中没有，就是untracked状态
+
+    ```powershell
+    (base) PS E:\idm下载\test_git> git ls-files --stage .\a.txt
+    100644 bc3b1a0f86cbf6b710087a6589b615f4d8d9ba9e 0       a.txt
+    (base) PS E:\idm下载\test_git> git show bc3b1a0f86cbf6b710087a6589b615f4d8d9ba9e
+    in working directory, unstaged
+    in repository, try to commit again
+    ```
+
+    
+
+  - repository
+
+    ```powershell
+    (base) PS E:\idm下载\test_git> git log --oneline
+    b778e97 (HEAD -> main) commit a.txt
+    713429d first commit of a.txt
+    825258a restore test
+    fdb0cb3 add dir/files
+    e701b1e add a test dir
+    02d4ad1 modify 2.sh
+    3e70560 (origin/main) nothing
+    db5ad5d rename
+    6ad9e69 rename
+    173d659 modify 2.sh ,add 3.sh
+    6d4c010 git ignore include
+    49f85e4 gitignore include
+    80d0df8 add git ignore
+    cc7398e ???
+    bf7e32c clear all
+    885da1d git mv
+    d0d0d1b rename the files
+    a9c9de5 this is a real test
+    6a503a2 this is a tset for commit phrase
+    8342021 delete
+    58e0281 3.0
+    c4e1bef Create 2.txt
+    d48b12f 1.0
+    (base) PS E:\idm下载\test_git> git show b778e97
+    commit b778e97c239b087b569d93429802c8f1d3792da6 (HEAD -> main)
+    Author: whr <819987540@qq.com>
+    Date:   Sat Jan 8 10:50:27 2022 +0800
+    
+        commit a.txt
+    
+    diff --git a/a.txt b/a.txt
+    index 2248ed4..bc3b1a0 100644
+    --- a/a.txt
+    +++ b/a.txt
+    @@ -1 +1,2 @@
+    -in working directory, unstaged
+    \ No newline at end of file
+    +in working directory, unstaged
+    +in repository, try to commit again
+    \ No newline at end of file
+    ```
+
+  - 状态
+
+    因为staging area中的内容是从repository中恢复的，所以第一个位置没有符号进行标识
+
+    因为working directory中的内容相对staging area发生了变化，所以第二个位置显示M
+
+    ```powershell
+    (base) PS E:\idm下载\test_git> git status -s
+     M a.txt
+    ?? null.txt
+    ```
+
+    
+
+  
+
+
 
