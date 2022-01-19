@@ -33,3 +33,8 @@ https://blog.csdn.net/weixin_42988521/article/details/94595565
 # wireshark安装失败后
 
 最终的解决方法是将阿里源换成了清华源，然后依赖问题就被解决了。
+
+
+
+# 配置typora的图床
+
