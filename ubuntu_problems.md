@@ -38,3 +38,5 @@ https://blog.csdn.net/weixin_42988521/article/details/94595565
 
 # 配置typora的图床
 
+- 首先下载picgo(app)
+- 
