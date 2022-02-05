@@ -1,0 +1,15 @@
+https://sz.58.com/danbaobaoxiantouzi/pn2/?PGTID=0d3036b0-0000-45ac-cb30-1760db634f36&ClickID=1
+https://sz.58.com/danbaobaoxiantouzi/?PGTID=0d3036b0-0000-4802-f49d-06f04210565c&ClickID=1
+
+在55机器上安装redis镜像，并进行端口映射
+docker run -itd --name kouzige_redis -p 6379:6379 redis:6.2.4-buster /bin/bash
+docker run -itd --name kouzige_test 172.16.2.40:5000/kouzige:1.0 /bin/bash
+作为redis测试
+docker run -itd --name kouzige_redis redis:6.2.4-buster /bin/bash
+
+docker run -itd --name make_redis ubuntu:18.04 /bin/bash
+apt update
+apt upgrade -y
+apt install -y wget lsof systemd  procps
+
+docker run -itd --name kouzige_redis 819987540/ubuntu_kit:1.0 /bin/bash
