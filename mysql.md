@@ -385,7 +385,7 @@ modify之后必须带上字段类型
 
 1. 创建表create table if not exists table_name(
 
-   ​	\`  字段名\``  属性,
+   ​	\`  字段名 \`  属性,
 
    primary key('') 
 
