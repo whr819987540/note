@@ -890,9 +890,9 @@ STATICFILES_DIRS=[
 
 
 
-![image-20210419181636768](https://gitee.com/hit_whr/pic_2.0/raw/master/20210419181643.png)
+![image-20210419181636768](https://raw.githubusercontent.com/whr819987540/pic/main/20210419181643.png)
 
-![image-20210419181717174](https://gitee.com/hit_whr/pic_2.0/raw/master/20210419181717.png)
+![image-20210419181717174](https://raw.githubusercontent.com/whr819987540/pic/main/20210419181717.png)
 
 
 
@@ -922,10 +922,10 @@ plus（静态资源如果返回304状态码，表明是cache给的，应该清�
 
 setting.py
 
-![image-20210420193300938](https://gitee.com/hit_whr/pic_2.0/raw/master/20210420193301.png)
+![image-20210420193300938](https://raw.githubusercontent.com/whr819987540/pic/main/20210420193301.png)
 
 uwsgi日志
 
 [pid: 4443|app: 0|req: 3/12] 222.175.198.19 () {32 vars in 700 bytes} [Tue Apr 20 19:27:34 2021] GET /static/learning_logs/images/most2.png => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
 
-目录结构![image-20210420193506665](https://gitee.com/hit_whr/pic_2.0/raw/master/20210420193506.png)
+目录结构![image-20210420193506665](https://raw.githubusercontent.com/whr819987540/pic/main/20210420193506.png)

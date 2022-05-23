@@ -1,6 +1,6 @@
 # 
 
-![image-20210322211139324](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210322211139324.png)
+![image-20210322211139324](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210322211139324.png)
 
 
 

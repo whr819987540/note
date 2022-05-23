@@ -1,8 +1,8 @@
-![image-20211025223337981](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223337981.png)
+![image-20211025223337981](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223337981.png)
 
 
 
-![image-20211025223353526](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223353526.png)
+![image-20211025223353526](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223353526.png)
 
 
 
@@ -51,7 +51,7 @@ go是编译型的语言，在win平台上可以用`go build xx.go` 生成同名�
 
 - go build
 
-![image-20211025223408925](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223408925.png)
+![image-20211025223408925](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223408925.png)
 
 - 运行exe文件
 
@@ -59,7 +59,7 @@ go是编译型的语言，在win平台上可以用`go build xx.go` 生成同名�
 
 - 用del删除.exe文件，然后go run
 
-![image-20211025223427206](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223427206.png)
+![image-20211025223427206](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223427206.png)
 
 - 在linux平台上，编译后，用`./`命令执行该可执行文件
 
@@ -81,7 +81,7 @@ go是编译型的语言，在win平台上可以用`go build xx.go` 生成同名�
 
 import
 
-![image-20211025223442503](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223442503.png)
+![image-20211025223442503](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223442503.png)
 
 ## 查看内置的包
 
@@ -102,7 +102,7 @@ import
 因为没有将func.go文件编译
 ![image-20210610204705688](https://gitee.com/hit_whr/pic_3.0/raw/master/img/image-20210610204705688.png)
 
-![image-20211025223502377](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223502377.png)
+![image-20211025223502377](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223502377.png)
 
 
 
@@ -110,7 +110,7 @@ import
 
 用`go build .`将目录下的所有文件都编译了，生成一个名为dir_name.go 的exe文件，然后执行
 
-![image-20211025223512810](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223512810.png)
+![image-20211025223512810](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223512810.png)
 
 但这样比较麻烦，想在ide中操作
 
@@ -130,7 +130,7 @@ import
 
 首先是src目录，表明放的是源代码，然后进入go_code目录，在下面建立项目目录，然后再建立某个项目所用的包，可以用多个包，但是要有main包和main函数，作为入口函数。
 
-![image-20211025223523897](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223523897.png)
+![image-20211025223523897](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223523897.png)
 
 
 
@@ -154,7 +154,7 @@ import
 
 \\\ 对\进行转义
 
-![image-20211025223536826](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223536826.png)
+![image-20211025223536826](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223536826.png)
 
 
 
@@ -162,7 +162,7 @@ import
 
 - 推荐用\\\来表示注释内容
 
-![image-20211025223552843](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025223552843.png)
+![image-20211025223552843](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025223552843.png)
 
 
 
@@ -184,7 +184,7 @@ import
 
 ![image-20210610213249230](https://gitee.com/hit_whr/pic_3.0/raw/master/img/image-20210610213249230.png)
 
-![image-20210610213323059](https://gitee.com/hit_whr/pic_2.0/raw/master/image-2021061021332305.png)
+![image-20210610213323059](https://raw.githubusercontent.com/whr819987540/pic/main/image-2021061021332305.png)
 
 
 
@@ -210,7 +210,7 @@ cmd将指令发给dos（文件操作系统）进行解析指令，然后对磁�
 
   - 特别的是，在盘符之间跳转时，需要加上/d
 
-    ![image-20210610214851445](https://gitee.com/hit_whr/pic_2.0/raw/master/image-2021061021485144.png)
+    ![image-20210610214851445](https://raw.githubusercontent.com/whr819987540/pic/main/image-2021061021485144.png)
 
 - md(make directory) 新建一个目录名，默认在当前目录下建立
 
@@ -220,9 +220,9 @@ cmd将指令发给dos（文件操作系统）进行解析指令，然后对磁�
 
 - rd(删除目录及其下面的所有内容)/s/q，删除并且不询问
 
-![image-20210610215138629](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210610215138629.png)
+![image-20210610215138629](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210610215138629.png)
 
-![image-20210610215212073](https://gitee.com/hit_whr/pic_2.0/raw/master/image-2021061021521207.png)
+![image-20210610215212073](https://raw.githubusercontent.com/whr819987540/pic/main/image-2021061021521207.png)
 
 ![image-20210610215254315](https://gitee.com/hit_whr/pic_3.0/raw/master/img/image-20210610215254315.png)
 
@@ -242,7 +242,7 @@ cmd将指令发给dos（文件操作系统）进行解析指令，然后对磁�
 
 # 安装
 
-![image-20210610220256355](https://gitee.com/hit_whr/pic_2.0/raw/master/image-2021061022025635.png)
+![image-20210610220256355](https://raw.githubusercontent.com/whr819987540/pic/main/image-2021061022025635.png)
 
 ![image-20210610220258680](https://gitee.com/hit_whr/pic_3.0/raw/master/img/image-20210610220258680.png)
 
@@ -340,7 +340,7 @@ func main()  {
 }
 ```
 
-![image-20210610221346590](https://gitee.com/hit_whr/pic_2.0/raw/master/image-2021061022134659.png)
+![image-20210610221346590](https://raw.githubusercontent.com/whr819987540/pic/main/image-2021061022134659.png)
 
 ### 全局的常量
 
@@ -364,11 +364,11 @@ uint，uint8，uint16，uint32，uint64
 
 byte一个字节（无符号）
 
-![image-20210610222214979](https://gitee.com/hit_whr/pic_2.0/raw/master/image-2021061022221497.png)
+![image-20210610222214979](https://raw.githubusercontent.com/whr819987540/pic/main/image-2021061022221497.png)
 
 
 
-![image-20210610222303094](https://gitee.com/hit_whr/pic_2.0/raw/master/image-2021061022230309.png)
+![image-20210610222303094](https://raw.githubusercontent.com/whr819987540/pic/main/image-2021061022230309.png)
 
 
 
@@ -389,15 +389,15 @@ float32，float64
 - go中默认用utf-8编码，英文字符一个字节就可以放下，中文字符需要三个字节
   - byte放不下
 
-![image-20210610224427034](https://gitee.com/hit_whr/pic_2.0/raw/master/image-2021061022442703.png)
+![image-20210610224427034](https://raw.githubusercontent.com/whr819987540/pic/main/image-2021061022442703.png)
 
 
 
-![image-20210610224443353](https://gitee.com/hit_whr/pic_2.0/raw/master/image-2021061022444335.png)
+![image-20210610224443353](https://raw.githubusercontent.com/whr819987540/pic/main/image-2021061022444335.png)
 
 
 
-![image-20210610224506101](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210610224506101.png)
+![image-20210610224506101](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210610224506101.png)
 
 
 
@@ -416,7 +416,7 @@ func main()  {
 }
 ```
 
-![image-20210610224328266](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210610224328266.png)
+![image-20210610224328266](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210610224328266.png)
 
 - string是字节的组合
 - 在输出的时候byte要用格式控制符进行解释

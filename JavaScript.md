@@ -10,13 +10,13 @@ html里面引入javascript代码
 </script>
 ```
 
-![image-20210712095132158](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210712095132158.png)
+![image-20210712095132158](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210712095132158.png)
 
 
 
 ## 分文件夹管理
 
-![image-20210712095304481](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210712095304481.png)
+![image-20210712095304481](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210712095304481.png)
 
 
 

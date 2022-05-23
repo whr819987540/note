@@ -2,7 +2,7 @@
 
 
 
-![image-20210611214824646](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210611214824646.png)
+![image-20210611214824646](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210611214824646.png)
 
 flask+mysql(5.7.19)+python(3.6.8)
 
@@ -26,7 +26,7 @@ app=Flask(__name__)
 
 Flask类的**route()**函数是一个装饰器，它告诉应用程序哪个URL应该调用相关的函数。app.route(rule, options)
 
-![image-20210611220053938](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210611220053938.png)
+![image-20210611220053938](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210611220053938.png)
 
 ### 细节
 
@@ -48,15 +48,15 @@ redirect（url_for(函数名，url的参数)）
 
 @app.route(url,methods=[‘’,‘’])
 
-![image-20210611224358343](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210611224358343.png)
+![image-20210611224358343](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210611224358343.png)
 
 
 
-![image-20210612084633905](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210612084633905.png)
+![image-20210612084633905](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210612084633905.png)
 
 
 
-![image-20210612084711474](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210612084711474.png)
+![image-20210612084711474](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210612084711474.png)
 
 
 
@@ -66,7 +66,7 @@ redirect（url_for(函数名，url的参数)）
 
 
 
-![image-20210611215111532](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210611215111532.png)
+![image-20210611215111532](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210611215111532.png)
 
 
 

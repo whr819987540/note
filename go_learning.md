@@ -1427,7 +1427,7 @@ usage: gofmt [flags] [path ...]
 
 ### ide
 
-![image-20220121100919045](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220121100919045.png)
+![image-20220121100919045](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220121100919045.png)
 
 
 

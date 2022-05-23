@@ -30,7 +30,7 @@
 
 先开启一个任务
 
-![image-20210829165945843](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210829165945843.png)
+![image-20210829165945843](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210829165945843.png)
 
 ctrl+z，stop这个前台任务，并放到后台，处于暂停状态。
 
@@ -40,7 +40,7 @@ ctrl+z，stop这个前台任务，并放到后台，处于暂停状态。
 
 查看当前shell正在执行的任务。
 
-![image-20210829170112157](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210829170112157.png)
+![image-20210829170112157](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210829170112157.png)
 
 [1]即为任务的num
 
@@ -48,13 +48,13 @@ ctrl+z，stop这个前台任务，并放到后台，处于暂停状态。
 
 ## fg %num 切换到前台
 
-![image-20210829170221329](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210829170221329.png)
+![image-20210829170221329](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210829170221329.png)
 
 
 
 ## bg %num切换到后台
 
-![image-20210829170302557](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210829170302557.png)
+![image-20210829170302557](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210829170302557.png)
 
 
 
@@ -88,10 +88,10 @@ root     21419  0.0  0.0 112812   972 pts/0    R+   17:12   0:00 grep --color=au
 
 现在先退出终端。
 
-![image-20210829172032553](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210829172032553.png)
+![image-20210829172032553](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210829172032553.png)
 
 
 
-![image-20210829172045963](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210829172045963.png)
+![image-20210829172045963](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210829172045963.png)
 
 数据还在传输，这个进程确实忽略了HUP信号，在后台运行。

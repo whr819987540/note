@@ -36,7 +36,7 @@ git服务器版
 
   与win平台不同，linux下git的配置文件如此简洁
 
-  ![image-20210318224201362](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210318224201362.png)
+  ![image-20210318224201362](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210318224201362.png)
 
 
 
@@ -50,11 +50,11 @@ git服务器版
   > - **暂存区：**英文叫 stage 或 index。一般存放在 **.git** 目录下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
   > - **版本库：**工作区有一个隐藏目录 **.git**，这个不算工作区，而是 Git 的版本库。
 
-  ![image-20210318224416943](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210318224416943.png)
+  ![image-20210318224416943](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210318224416943.png)
 
   
 
-  ![image-20210318224521435](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210318224521435.png)
+  ![image-20210318224521435](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210318224521435.png)
 
   
 

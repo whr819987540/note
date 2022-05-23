@@ -42,7 +42,7 @@ io是容器的镜像
 
 防止下载镜像太过缓慢
 
-![image-20210623204844863](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623204844863.png)
+![image-20210623204844863](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623204844863.png)
 
 
 
@@ -50,7 +50,7 @@ io是容器的镜像
 
 `yum install -y docker-ce`
 
-![image-20210623204917994](https://gitee.com/hit_whr/pic_2.0/raw/master/5Nel6xwIW3zvsLt.png)
+![image-20210623204917994](https://raw.githubusercontent.com/whr819987540/pic/main/5Nel6xwIW3zvsLt.png)
 
 
 
@@ -60,11 +60,11 @@ io是容器的镜像
 
 `systemctl start docker`
 
-![image-20211025231743507](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025231743507.png)
+![image-20211025231743507](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025231743507.png)
 
 
 
-![image-20211025231757855](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025231757855.png)
+![image-20211025231757855](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025231757855.png)
 
 ## 帮助文档
 
@@ -76,7 +76,7 @@ https://docs.docker.com/reference/
 
 docker images
 
-![image-20211025231809301](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025231809301.png)
+![image-20211025231809301](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025231809301.png)
 
 docker images --help
 
@@ -88,21 +88,21 @@ docker images --help
 
 要寻找某个镜像，可以去docker hub上搜索并下载
 
-![image-20211025231817881](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025231817881.png)
+![image-20211025231817881](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025231817881.png)
 
 
 
-![image-20210623205758468](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623205758468.png)
+![image-20210623205758468](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623205758468.png)
 
 
 
 
 
-![image-20210623205817215](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623205817215.png)
+![image-20210623205817215](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623205817215.png)
 
 也可以用docker search来进行搜索，结果是一样的
 
-![image-20210623205847503](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623205847503.png)
+![image-20210623205847503](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623205847503.png)
 
 
 
@@ -110,7 +110,7 @@ docker images --help
 
 docker search xxx -f=condition
 
-![image-20210623210110822](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623210110822.png)
+![image-20210623210110822](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623210110822.png)
 
 ## 下载镜像
 
@@ -120,7 +120,7 @@ tag（版本）是可选的，如果不加，默认最新（latest）版本
 
 也就是default tag（latest）
 
-![image-20210623210328623](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623210328623.png)
+![image-20210623210328623](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623210328623.png)
 
 
 
@@ -128,11 +128,11 @@ tag（版本）是可选的，如果不加，默认最新（latest）版本
 
 下面查找存在的mysql镜像版本，比如5.7，然后进行下载
 
-![image-20210623210554605](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623210554605.png)
+![image-20210623210554605](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623210554605.png)
 
 docker pull mysql:5.7
 
-![image-20210623233504475](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025231950496.png)
+![image-20210623233504475](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025231950496.png)
 
 
 
@@ -140,7 +140,7 @@ docker pull mysql:5.7
 
 可以用`docker info`查看相关的配置，比如image的默认存储位置
 
- ![image-20211025231950496](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025231950496.png)
+ ![image-20211025231950496](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025231950496.png)
 
 ```bash
 [root@iZm5e98zphj5y525q4v5k4Z ~]# cd /var/lib/docker/
@@ -192,7 +192,7 @@ drwx------ 4 root root 4096 Jun 23 21:02 layerdb
 
 `docker images -a`
 
-![image-20210623234124003](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623234124003.png)
+![image-20210623234124003](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623234124003.png)
 
 repository是镜像对应的仓库名称（docker hub）
 
@@ -202,7 +202,7 @@ tag是版本号，image id是对镜像的标识
 
 显示所有镜像的id
 
-![image-20211025232022863](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211025232022863.png)
+![image-20211025232022863](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211025232022863.png)
 
 
 
@@ -224,11 +224,11 @@ tag是版本号，image id是对镜像的标识
 
 `docker rmi $(docker images -aq)`
 
-![image-20210623234724884](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623234724884.png)
+![image-20210623234724884](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623234724884.png)
 
 删除后没有镜像了
 
-![image-20211026184832435](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211026184832435.png)
+![image-20211026184832435](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211026184832435.png)
 
 
 
@@ -238,13 +238,13 @@ tag是版本号，image id是对镜像的标识
 
 `docker search centos`
 
-![image-20210623235046930](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623235046930.png)
+![image-20210623235046930](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623235046930.png)
 
 
 
 `docker pull centos:7 `
 
-![image-20210623235230217](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210623235230217.png)
+![image-20210623235230217](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210623235230217.png)
 
 
 
@@ -256,7 +256,7 @@ tag是版本号，image id是对镜像的标识
 
 command比如bash，ssh等等
 
-![image-20211026184900862](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211026184900862.png)
+![image-20211026184900862](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211026184900862.png)
 
 
 
@@ -264,17 +264,17 @@ command比如bash，ssh等等
 
 有点诧异
 
-![image-20211026184910338](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211026184910338.png)
+![image-20211026184910338](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211026184910338.png)
 
 -i是说交互模式
 
-![image-20210624000053509](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624000053509.png)
+![image-20210624000053509](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624000053509.png)
 
 但只是-i似乎不行
 
 还得-it
 
-![image-20211026184930857](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211026184930857.png)
+![image-20211026184930857](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211026184930857.png)
 
 tty是与i/o有关的一个东西
 
@@ -282,7 +282,7 @@ tty是与i/o有关的一个东西
 
 进入后，就像开启了一个新的系统一样，只不过命令不是那么充分
 
-![image-20210624000547209](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624000547209.png)
+![image-20210624000547209](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624000547209.png)
 
 
 
@@ -343,7 +343,7 @@ exit是直接退出，此时容器也会被stop
 
 ctrl+pq是后台运行
 
-![image-20211026184953184](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211026184953184.png)
+![image-20211026184953184](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211026184953184.png)
 
 
 
@@ -351,7 +351,7 @@ ctrl+pq是后台运行
 
 ## 查看容器的状态
 
-![image-20210624000800075](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624000800075.png)
+![image-20210624000800075](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624000800075.png)
 
 容器id
 
@@ -369,7 +369,7 @@ names可以指定
 
 现在看看有没有其他的status
 
-![image-20210624001407020](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624001407020.png)
+![image-20210624001407020](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624001407020.png)
 
 刚才创建的container已经没了
 
@@ -377,19 +377,19 @@ names可以指定
 
 `docker ps -a `
 
-![image-20210624001531747](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624001531747.png)
+![image-20210624001531747](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624001531747.png)
 
 只显示容器id
 
 `docker ps -aq `
 
-![image-20210624001723292](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624001723292.png)
+![image-20210624001723292](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624001723292.png)
 
 
 
 如果历史上创建的容器太多了，利用-n进行数目的筛选
 
-![image-20210624001946955](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624001946955.png)
+![image-20210624001946955](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624001946955.png)
 
 可以看出来，无论是-a，-aq，-aq -n=，都是根据created time来排序的
 
@@ -424,7 +424,7 @@ CONTAINER ID   IMAGE      COMMAND                  CREATED         STATUS       
 
 `docker rm [-f] container_id`
 
-![image-20210624002158350](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624002158350.png)
+![image-20210624002158350](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624002158350.png)
 
 
 
@@ -432,13 +432,13 @@ CONTAINER ID   IMAGE      COMMAND                  CREATED         STATUS       
 
 报错说，==不能删除正在运行的容器，要么把容器停了，要么强制删除==
 
-![image-20210624002324383](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624002324383.png)
+![image-20210624002324383](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624002324383.png)
 
 删除全部容器
 
 `docker rm -f $(docker ps -aq)`
 
-![image-20210624002506632](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624002506632.png)
+![image-20210624002506632](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624002506632.png)
 
 
 
@@ -584,7 +584,7 @@ docker inspect
 
 ### 启动(重新进入容器)
 
-![image-20210624002959800](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624002959800.png)
+![image-20210624002959800](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624002959800.png)
 
 那么问题来了：如何以交互模式进入容器？
 
@@ -610,13 +610,13 @@ anaconda-post.log  bin  dev  etc  home  lib  lib64  media  mnt  opt  proc  root 
 
 
 
-![image-20210624003321769](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624003321769.png)
+![image-20210624003321769](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624003321769.png)
 
 
 
 ### 停止
 
-![image-20210624003626205](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624003626205.png)
+![image-20210624003626205](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624003626205.png)
 
 
 
@@ -624,7 +624,7 @@ anaconda-post.log  bin  dev  etc  home  lib  lib64  media  mnt  opt  proc  root 
 
 `docker stop $(docker ps -aq)`
 
-![image-20210624004438823](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624004438823.png)
+![image-20210624004438823](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624004438823.png)
 
 
 
@@ -702,11 +702,11 @@ CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS      
 
 ## 给容器改名
 
-![image-20210624003403271](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624003403271.png)
+![image-20210624003403271](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624003403271.png)
 
 这种name不具备实际含义，所以进行改名
 
-![image-20210624003524119](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624003524119.png)
+![image-20210624003524119](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624003524119.png)
 
 
 
@@ -716,7 +716,7 @@ CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS      
 
 `docker cp container_id:path path`
 
-![image-20210624004227032](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210624004227032.png)
+![image-20210624004227032](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210624004227032.png)
 
 
 

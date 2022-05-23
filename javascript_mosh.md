@@ -11,7 +11,7 @@ youtube mosh JavaScript教程
 
 ## embedded
 
-![image-20220108152724077](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220108152724077.png)
+![image-20220108152724077](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220108152724077.png)
 
 
 
@@ -19,19 +19,19 @@ youtube mosh JavaScript教程
 
 - html
 
-![image-20220108152801674](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220108152801674.png)
+![image-20220108152801674](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220108152801674.png)
 
 
 
 - JavaScript
 
-![image-20220108152829782](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220108152829782.png)
+![image-20220108152829782](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220108152829782.png)
 
 
 
 - result
 
-![image-20220108152849056](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220108152849056.png)
+![image-20220108152849056](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220108152849056.png)
 
 
 
@@ -41,7 +41,7 @@ youtube mosh JavaScript教程
 
 - 用关键字let定义变量（es6标准）
 
-![image-20220108154004662](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20220108154004662.png)
+![image-20220108154004662](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220108154004662.png)
 
 
 

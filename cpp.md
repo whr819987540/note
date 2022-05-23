@@ -352,15 +352,15 @@ disadvantage:如果pro1，pro2都有func2，而要使用pro2中的，前面用�
 
 声明区域，潜在作用域，作用域
 
-![image-20210305220732456](https://gitee.com/hit_whr/pic_2.0/raw/master/20210325220643.png)
+![image-20210305220732456](https://raw.githubusercontent.com/whr819987540/pic/main/20210325220643.png)
 
-![image-20210305222218926](https://gitee.com/hit_whr/pic_2.0/raw/master/20210325220652.png)
+![image-20210305222218926](https://raw.githubusercontent.com/whr819987540/pic/main/20210325220652.png)
 
 
 
-![image-20210305222225693](https://gitee.com/hit_whr/pic_2.0/raw/master/20210325220725.png)
+![image-20210305222225693](https://raw.githubusercontent.com/whr819987540/pic/main/20210325220725.png)
 
-![image-20210305222226472](https://gitee.com/hit_whr/pic_2.0/raw/master/20210325220733.png)
+![image-20210305222226472](https://raw.githubusercontent.com/whr819987540/pic/main/20210325220733.png)
 
 ```cpp
 #include <iostream>
@@ -1086,11 +1086,11 @@ num最好设置为length-1，然后函数自动补充'\0'
 
 ![image-20210310222912925](pic/cpp/image-20210310222912925.png)
 
-![image-20210310222915034](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210310222915034.png)
+![image-20210310222915034](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210310222915034.png)
 
 
 
-![image-20210311083256276](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311083256276.png)
+![image-20210311083256276](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311083256276.png)
 
 ch数组名，三个元素，char*，可以作为一个字符串（new的内存单元）的首地址
 
@@ -1109,7 +1109,7 @@ char *ch[3];
 
 自动存储
 
-![image-20210311084251395](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311084251395.png)
+![image-20210311084251395](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311084251395.png)
 
 静态存储
 
@@ -1117,19 +1117,19 @@ char *ch[3];
 
 动态存储
 
-![image-20210311084839099](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311084839099.png)
+![image-20210311084839099](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311084839099.png)
 
 
 
-![image-20210311090507939](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311090507939.png)
+![image-20210311090507939](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311090507939.png)
 
-![image-20210311090509923](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311090509923.png)
+![image-20210311090509923](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311090509923.png)
 
 strcmp(char*,char *)
 
 按照charset的编码值进行比较ASCII中先大写字母，然后小写字母。
 
-![image-20210311194134454](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311194134454.png)
+![image-20210311194134454](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311194134454.png)
 
 string类中对运算符==，！=进行了重载，可以用来替代strcmp。
 
@@ -1141,19 +1141,19 @@ ctime头文件中，函数clock()返回程序从开始到执行该函数，计�
 
 文件尾及其判断条件
 
-![image-20210311202523343](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311202523343.png)
+![image-20210311202523343](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311202523343.png)
 
 遇到eof（ctrl+z）也可以用cin.clear()进行重置
 
-![image-20210311202914548](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311202914548.png)
+![image-20210311202914548](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311202914548.png)
 
 
 
-![image-20210311203334475](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311203334475.png)
+![image-20210311203334475](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311203334475.png)
 
 有原型 istream & get(char&)所以cin.get(char)的返回值为cin，然后进行bool转换
 
-![image-20210311203814366](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311203814366.png)
+![image-20210311203814366](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311203814366.png)
 
 
 
@@ -1161,7 +1161,7 @@ ctime头文件中，函数clock()返回程序从开始到执行该函数，计�
 
 所以可以不使用cin.fail()来返回failbit，直接对cin.get(char)的结果进行判断
 
-![image-20210311204813587](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311204813587.png)
+![image-20210311204813587](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311204813587.png)
 
 
 
@@ -1169,17 +1169,17 @@ ctime头文件中，函数clock()返回程序从开始到执行该函数，计�
 
 
 
-![image-20210311215310907](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311215310907.png)
+![image-20210311215310907](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311215310907.png)
 
 
 
 switch
 
-![image-20210311215444502](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311215444502.png)
+![image-20210311215444502](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311215444502.png)
 
 
 
-![image-20210311215926902](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311215926902.png)
+![image-20210311215926902](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311215926902.png)
 
 输入错误的四个后果：
 
@@ -1216,7 +1216,7 @@ switch
 
 相当于名称空间的嵌套了
 
-![image-20210312210020036](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210312210020036.png)
+![image-20210312210020036](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210312210020036.png)
 
 ifstream的对象和cin没有啥本质区别，分别是从文件，缓冲流中将数据读入到内存，以至于方法都十分相似
 
@@ -1243,7 +1243,7 @@ int main()
 }
 ```
 
-![image-20210512194742584](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210512194742584.png)
+![image-20210512194742584](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210512194742584.png)
 
 
 
@@ -1424,7 +1424,7 @@ else
 
 
 
-![image-20210313153014680](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210313153014680.png)
+![image-20210313153014680](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210313153014680.png)
 
 ifsteam在进行读取时，把回车符或换行符也读入了，比较符合结果
 
@@ -1472,11 +1472,11 @@ cout<<int(ch)<<endl;
 
 如果有构造函数，但是参数是缺省的，就不需要用（）来指定参数了
 
-![image-20210319220343848](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210319220343848.png)
+![image-20210319220343848](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210319220343848.png)
 
 也能调用成功。
 
-![image-20210320092618618](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210320092618618.png)
+![image-20210320092618618](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210320092618618.png)
 
 
 
@@ -1545,7 +1545,7 @@ vc.push_back()，在容器的尾部增加一个元素
 
 vc.pop_back()，删除容器尾部的一个元素，无返回值，void；在pop过程中，size逐个减小，cap不变，首地址不变（确实没必要自动改变，毕竟重新分配存储空间是一个很大的开销）
 
-![image-20210330102423716](https://gitee.com/hit_whr/pic_2.0/raw/master/20210330102438.png)
+![image-20210330102423716](https://raw.githubusercontent.com/whr819987540/pic/main/20210330102438.png)
 
 节约开销的方法：让系统减少重新分配空间并进行整体移动的次数->提前设置一个比较足够且满足自己需要的cap
 
@@ -2001,7 +2001,7 @@ void Select::func()
 
 
 
-![image-20210320145949706](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210320145949706.png)
+![image-20210320145949706](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210320145949706.png)
 
 引用是别名，一旦初始化为某个变量的别名后，就不变了
 
@@ -2011,7 +2011,7 @@ p=b;
 
 实际上是完成了一次对p，a值的修改，而p指向的内容没有发生改变
 
-![image-20210320150214548](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210320150214548.png)
+![image-20210320150214548](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210320150214548.png)
 
 
 
@@ -2252,7 +2252,7 @@ output a in child function using out_a:a = 2
 
 子类重载父类中的同名函数（参数列表相同）
 
-![image-20210324092334715](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210324092334715.png)
+![image-20210324092334715](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210324092334715.png)
 
 ```cpp
 class C {
@@ -3191,7 +3191,7 @@ int main()
 }
 ```
 
-![image-20210331155954062](https://gitee.com/hit_whr/pic_2.0/raw/master/20210331160001.png)
+![image-20210331155954062](https://raw.githubusercontent.com/whr819987540/pic/main/20210331160001.png)
 
 直接find是不行的，因为待检索项是结构体，而传入的target是int类型，无法进行比较，所以要在结构体内重载==这个运算符
 
@@ -3748,7 +3748,7 @@ a.erase(p)返回p指向的后面一个位置，在遍历删除时，比较有效
 
 在cmd窗口绘制图形时注意。首先得erase掉原来的图形（操作是，光标定位到原来的起始位置，用空字符覆盖，然后绘制自己的新图形
 
-![image-20210410213559883](https://gitee.com/hit_whr/pic_2.0/raw/master/20210410213600.png)
+![image-20210410213559883](https://raw.githubusercontent.com/whr819987540/pic/main/20210410213600.png)
 
 
 
@@ -3824,9 +3824,9 @@ int main()
 
 汉字是两个字节，单纯的逆转是不行的。比如（AB）C(DF)逆转为FDCBA，不会有任何输出，因为汉字的字节高位和ASCII的字节高位不同，FD不确定对应哪个汉字，但绝对不是我们想要的。
 
-![image-20210411091811700](https://gitee.com/hit_whr/pic_2.0/raw/master/20210411091811.png)
+![image-20210411091811700](https://raw.githubusercontent.com/whr819987540/pic/main/20210411091811.png)
 
-![image-20210411091757670](https://gitee.com/hit_whr/pic_2.0/raw/master/20210411091757.png)
+![image-20210411091757670](https://raw.githubusercontent.com/whr819987540/pic/main/20210411091757.png)
 
 
 
@@ -4200,11 +4200,11 @@ void test::out()
 
 结合上面两个，在名称空间中声明模板类必须同时定义模板类，连在名称空间外都不行了
 
-![image-20210420222257432](https://gitee.com/hit_whr/pic_2.0/raw/master/20210420222304.png)
+![image-20210420222257432](https://raw.githubusercontent.com/whr819987540/pic/main/20210420222304.png)
 
-![image-20210420222521161](https://gitee.com/hit_whr/pic_2.0/raw/master/20210420222521.png)
+![image-20210420222521161](https://raw.githubusercontent.com/whr819987540/pic/main/20210420222521.png)
 
-![](https://gitee.com/hit_whr/pic_2.0/raw/master/20210420222524.png)
+![](https://raw.githubusercontent.com/whr819987540/pic/main/20210420222524.png)
 
 
 
@@ -4230,7 +4230,7 @@ https://www.cnblogs.com/MuyouSome/p/3332699.html
 
 很好的说明
 
-![image-20210513145630166](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210513145630166.png)
+![image-20210513145630166](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210513145630166.png)
 
 多态是指通过基类的指针既可以访问基类的成员，也可以访问派生类的成员
 
@@ -4834,7 +4834,7 @@ int main()
 
 可以看到内容为8个ascii字符，大小也为八个字节。
 
-![image-20210513180226913](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210513180226913.png)
+![image-20210513180226913](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210513180226913.png)
 
 而doc这种是有格式的文件，一般比较大。
 
@@ -4854,11 +4854,11 @@ int main()
 
 所以需要提前设置好s的长度
 
-![image-20210513201936547](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210513201936547.png)
+![image-20210513201936547](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210513201936547.png)
 
 
 
-![image-20210513202019666](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210513202019666.png)
+![image-20210513202019666](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210513202019666.png)
 
 ```cpp
 //二进制文件基本操作：写字符串与写整数对比 
@@ -4942,4 +4942,5 @@ string read_file(string filename)
 }
 ```
 
-![image-20210512221105848](https://gitee.com/hit_whr/pic_3.0/raw/master/img/image-20210512221105848.png)
+![image-20210512221105848](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210512221105848.png)
+

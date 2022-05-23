@@ -841,11 +841,11 @@ nohup command >out.file 2>&1
 
 执行：
 
-![image-20210725165049355](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725165049355.png)
+![image-20210725165049355](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725165049355.png)
 
 断开连接：
 
-![image-20210725165114516](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725165114516.png)
+![image-20210725165114516](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725165114516.png)
 
 查看程序的执行结果：
 
@@ -888,7 +888,7 @@ nohup command >out.file 2>$1 &
 
 退出：
 
-![image-20210725165645169](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725165645169.png)
+![image-20210725165645169](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725165645169.png)
 
 查看执行结果：
 
@@ -1170,7 +1170,7 @@ root登录了
 
 #### 文件测试
 
-![image-20210725193645673](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725193645673.png)
+![image-20210725193645673](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725193645673.png)
 
 -a 判断文件或者文件夹是否存在
 
@@ -1207,7 +1207,7 @@ unknown
 
 #### 字符串测试
 
-![image-20210725194307617](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725194307617.png)
+![image-20210725194307617](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725194307617.png)
 
 ```bash
 [whr2190300211@iZm5e98zphj5y525q4v5k4Z shell_script]$ cat 1
@@ -1231,7 +1231,7 @@ fi
 
 #### 数值测试
 
-![image-20210725194756568](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725194756568.png)
+![image-20210725194756568](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725194756568.png)
 
 -eq equivalent
 
@@ -1259,7 +1259,7 @@ yes
 
 
 
-![image-20210725195437278](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725195437278.png)
+![image-20210725195437278](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725195437278.png)
 
 ```bash
 表达式0<a<10且a<>5
@@ -1284,7 +1284,7 @@ no
 
 #### 逻辑连接
 
-![image-20210725195544750](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725195544750.png)
+![image-20210725195544750](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725195544750.png)
 
 -a and
 

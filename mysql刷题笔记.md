@@ -4,23 +4,23 @@
 
 
 
-![image-20220213155515055](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220213155515055.png)
+![image-20220213155515055](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220213155515055.png)
 
 
 
 前两个用户，应该有order by来进行控制
 
-![image-20220213155707279](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220213155707279.png)
+![image-20220213155707279](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220213155707279.png)
 
 
 
 ## 通配符
 
-![image-20220213162059260](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220213162059260.png)
+![image-20220213162059260](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220213162059260.png)
 
 ## exists实现max
 
-![image-20220213162916378](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220213162916378.png)
+![image-20220213162916378](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220213162916378.png)
 
 
 
@@ -83,9 +83,9 @@ GROUP BY a.university
   - 首先要是答过题的用户，这个用right join处理好了
   - 然后是平均答题数=（答题总数，直接count）/ 用户数
     - question_id可能，不需要去重
-    - ![image-20220214110347648](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214110347648.png)
+    - ![image-20220214110347648](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214110347648.png)
     - device_id可能，因为还是一个人，所以需要去重
-    - ![image-20220214110413954](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214110413954.png)
+    - ![image-20220214110413954](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214110413954.png)
 
 
 
@@ -114,9 +114,9 @@ GROUP BY a.university
 
 - 并
   - 去重，union
-    - ![image-20220214155926399](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214155926399.png)
+    - ![image-20220214155926399](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214155926399.png)
   - 不去重，union all
-    - ![image-20220214155534140](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214155534140.png)
+    - ![image-20220214155534140](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214155534140.png)
 - 交
   - intersect
 - 差
@@ -130,13 +130,13 @@ GROUP BY a.university
 
 可以用集合，但是情况多了就比较麻烦
 
-![image-20220214160816348](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214160816348.png)
+![image-20220214160816348](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214160816348.png)
 
 
 
 
 
-![image-20220214160852884](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214160852884.png)
+![image-20220214160852884](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214160852884.png)
 
 
 
@@ -144,7 +144,7 @@ GROUP BY a.university
 
 [计算用户的平均次日留存率_牛客题霸_牛客网 (nowcoder.com)](https://www.nowcoder.com/practice/126083961ae0415fbde061d7ebbde453?tpId=199&tags=&title=&difficulty=0&judgeStatus=0&rp=0)
 
-![image-20220214171251529](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214171251529.png)
+![image-20220214171251529](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214171251529.png)
 
 - 关键点
 
@@ -201,13 +201,13 @@ GROUP BY a.university
 
 ## 子查询
 
-![image-20220214173829097](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214173829097.png)
+![image-20220214173829097](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214173829097.png)
 
 
 
 ## 多解
 
-![image-20220214201805178](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214201805178.png)
+![image-20220214201805178](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214201805178.png)
 
 ```mysql
 select device_id,university,gpa
@@ -273,7 +273,7 @@ group by up.device_id
 
 
 
-![image-20220215091331189](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215091331189.png)
+![image-20220215091331189](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215091331189.png)
 
 
 
@@ -286,17 +286,17 @@ group by up.device_id
 
 插入前：
 
-![image-20220215092804764](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215092804764.png)
+![image-20220215092804764](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215092804764.png)
 
 replace into插入后：
 
 显示影响了两行，即先删除，然后插入
 
-![image-20220215092831988](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215092831988.png)
+![image-20220215092831988](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215092831988.png)
 
 并且主键的值也发生了变化
 
-![image-20220215092909147](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215092909147.png)
+![image-20220215092909147](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215092909147.png)
 
 
 
@@ -405,11 +405,11 @@ alter table tb_name
 
 
 
-![image-20220215143905319](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215143905319.png)
+![image-20220215143905319](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215143905319.png)
 
 
 
-<img src="https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215144109088.png" alt="image-20220215144109088" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215144109088.png" alt="image-20220215144109088" style="zoom:50%;" />
 
 - 增加一列
   - 注意特别强调了在字段level后面
@@ -425,18 +425,18 @@ alter table tb_name
 ## 索引
 
 - DROP INDEX index_name ON ta_name
-  - ![image-20220215145404084](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215145404084.png)
-  - ![image-20220215145548240](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215145548240.png)
+  - ![image-20220215145404084](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215145404084.png)
+  - ![image-20220215145548240](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215145548240.png)
 - ALTER TABLE tbl_name ADD PRIMARY KEY (column_list): 该语句添加一个主键，这意味着索引值必须是唯一的，且不能为NULL。
   - 
 - ALTER TABLE tbl_name ADD UNIQUE index_name (column_list): 这条语句创建索引的值必须是唯一的（除了NULL外，NULL可能会出现多次）。
-  - ![image-20220215150040883](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215150040883.png)
+  - ![image-20220215150040883](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215150040883.png)
 - ALTER TABLE tbl_name ADD INDEX index_name (column_list): 添加普通索引，索引值可出现多次。
-  - ![image-20220215145956333](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215145956333.png)
+  - ![image-20220215145956333](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215145956333.png)
 - ALTER TABLE tbl_name ADD FULLTEXT index_name (column_list):该语句指定了索引为 FULLTEXT ，用于全文索引。
   - 
 
-![image-20220215150315073](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215150315073.png)
+![image-20220215150315073](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215150315073.png)
 
 
 
@@ -444,17 +444,17 @@ alter table tb_name
 
 `if(condition,a,b)`如果条件满足，返回a，否则返回b。
 
-![image-20220215152921924](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215152921924.png)
+![image-20220215152921924](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215152921924.png)
 
 
 
-![image-20220215152928414](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215152928414.png)
+![image-20220215152928414](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215152928414.png)
 
 
 
 
 
-![image-20220215152854596](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215152854596.png)
+![image-20220215152854596](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215152854596.png)
 
 - 已完成的试卷数
   - 即又成绩的试卷，且不能重复
@@ -469,7 +469,7 @@ alter table tb_name
 
 ## 题意hard
 
-![image-20220215161437840](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215161437840.png)
+![image-20220215161437840](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215161437840.png)
 
 ```mysql
 select ym,round(count(id)/count(distinct uid),2),count(distinct uid)
@@ -482,9 +482,9 @@ group by ym
 
 这个是错的，因为某个月的活跃天数不只是这个月有submit_time的记录数，还得满足对同一天的uid去重。
 
-![image-20220215160931772](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215160931772.png)
+![image-20220215160931772](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215160931772.png)
 
-![image-20220215160912556](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215160912556.png)
+![image-20220215160912556](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215160912556.png)
 
 - 活跃天
   - 某个用户在某天有submit_time
@@ -601,21 +601,21 @@ substring_index(string,delimiter,index)
 
 - 注意不是像python那样，分割，然后取第n个
 
-![image-20220214173513188](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214173513188.png)
+![image-20220214173513188](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214173513188.png)
 
 
 
-![image-20220214195734260](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214195734260.png)
+![image-20220214195734260](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214195734260.png)
 
 
 
-![image-20220214195802018](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214195802018.png)
+![image-20220214195802018](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214195802018.png)
 
 
 
 使用两次，获得年龄字段
 
-![image-20220214195830733](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214195830733.png)
+![image-20220214195830733](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214195830733.png)
 
 
 
@@ -642,13 +642,13 @@ substring_index(string,delimiter,index)
 
 如果满足条件，则+a，否则+b
 
-- ![image-20220214211057262](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214211057262.png)
+- ![image-20220214211057262](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214211057262.png)
 
 
-- ![image-20220214211114205](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214211114205.png)
+- ![image-20220214211114205](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214211114205.png)
 
 
-- ![image-20220214211141049](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214211141049.png)
+- ![image-20220214211141049](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214211141049.png)
 
 
 
@@ -660,7 +660,7 @@ count(if(condition,true,null))
 
 [浙大不同难度题目的正确率_牛客题霸_牛客网 (nowcoder.com)](https://www.nowcoder.com/practice/d8a4f7b1ded04948b5435a45f03ead8c?tpId=199&tags=&title=&difficulty=0&judgeStatus=0&rp=0)
 
-![image-20220214213922742](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214213922742.png)
+![image-20220214213922742](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214213922742.png)
 
 
 
@@ -684,7 +684,7 @@ count(if(condition,true,null))
 |        |                                                              |
 | `%s`   | Seconds (`00`..`59`)                                         |
 
-![image-20220214214152491](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220214214152491.png)
+![image-20220214214152491](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220214214152491.png)
 
 
 
@@ -703,15 +703,15 @@ where DATE_FORMAT(date,'%Y-%m')='2021-08'
 ## datetime相减,interval n unit 、timestampdiff(inverval_unit,start,end)
 
 - datetime相减并不会直接得到秒
-  - ![image-20220215094822897](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215094822897.png)
-  - ![image-20220215094842596](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215094842596.png)
+  - ![image-20220215094822897](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215094822897.png)
+  - ![image-20220215094842596](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215094842596.png)
 
 - 用interval来量化
-  - ![image-20220215100008939](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215100008939.png)
+  - ![image-20220215100008939](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215100008939.png)
   - 注意不要写成`submit_time-start_time<interval 6 minute`
 - 用`timestampdiff(inverval_unit,start,end)`
   - 注意是start在前，end在后
-  - ![image-20220215100458213](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220215100458213.png)
+  - ![image-20220215100458213](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220215100458213.png)
 
 
 

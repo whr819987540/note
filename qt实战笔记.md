@@ -36,19 +36,19 @@ qt的菜单里面，不能直接输入中文，但可以进行拷贝，然后进
 
 
 
-![image-20210320192533333](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210320192533333.png)
+![image-20210320192533333](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210320192533333.png)
 
-![image-20210320192740678](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210320192740678.png)
+![image-20210320192740678](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210320192740678.png)
 
 冒泡排序和快速排序的结果差别（100000个数据）
 
-![image-20210320200601956](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210320200601956.png)
+![image-20210320200601956](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210320200601956.png)
 
-![image-20210320200625764](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210320200625764.png)
+![image-20210320200625764](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210320200625764.png)
 
 
 
-![image-20210320200659502](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210320200659502.png)
+![image-20210320200659502](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210320200659502.png)
 
 
 

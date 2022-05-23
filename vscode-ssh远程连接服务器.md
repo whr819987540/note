@@ -2,29 +2,29 @@ vscode ssh连接服务器
 
 # 下载remote-ssh扩展
 
-![image-20211106223603041](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211106223603041.png)
+![image-20211106223603041](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211106223603041.png)
 
 
 
 # 配置扩展
 
-![image-20211106224319158](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211106224319158.png)
+![image-20211106224319158](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211106224319158.png)
 
 
 
 第一行是别名，第二行是ip，第三行是用户名
 
-![image-20211106224430150](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211106224430150.png)
+![image-20211106224430150](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211106224430150.png)
 
 # 本地生成rsa秘钥
 
 用`ssh-keygen`命令生成rsa秘钥
 
-![image-20211106223708161](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211106223708161.png)
+![image-20211106223708161](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211106223708161.png)
 
 进入上面的路径后
 
-![image-20211106223921002](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211106223921002.png)
+![image-20211106223921002](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211106223921002.png)
 
 id_rsa.pub是rsa对应的公钥，需要上传到指定服务器的指定用户。
 

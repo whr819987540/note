@@ -10,7 +10,7 @@ python数据分析
 
 
 
-![image-20210403214607366](https://gitee.com/hit_whr/pic_2.0/raw/master/20210403214614.png)
+![image-20210403214607366](https://raw.githubusercontent.com/whr819987540/pic/main/20210403214614.png)
 
 
 
@@ -84,7 +84,7 @@ plt.show()
 
 在命名的时候不要用list，容易冲突
 
-![image-20210404192803353](https://gitee.com/hit_whr/pic_2.0/raw/master/20210404192803.png)
+![image-20210404192803353](https://raw.githubusercontent.com/whr819987540/pic/main/20210404192803.png)
 
 
 
@@ -358,7 +358,7 @@ csv，comma-separated values，用逗号（也可以是其他字符）来分割�
 
 类似excel，并且可以用excel打开，也可以用记事本（文本文件）打开
 
-![image-20210405101328781](https://gitee.com/hit_whr/pic_2.0/raw/master/20210405101335.png)
+![image-20210405101328781](https://raw.githubusercontent.com/whr819987540/pic/main/20210405101335.png)
 
 上面的记录之间用的换行符，记录内用的逗号来进行分割
 
@@ -418,7 +418,7 @@ except:
 
 路线，根据表头获得需要数据的索引值，然后在之后的每一行截取对应索引值的数据
 
-![image-20210405103333881](https://gitee.com/hit_whr/pic_2.0/raw/master/20210405103333.png)
+![image-20210405103333881](https://raw.githubusercontent.com/whr819987540/pic/main/20210405103333.png)
 
 对于每一行的记录，可以直接用index来访问第index个字段，reader本身iterable
 
@@ -428,7 +428,7 @@ except:
 
 strptime(date,”%-%-%”)
 
-![image-20210405122145261](https://gitee.com/hit_whr/pic_2.0/raw/master/20210405122145.png)
+![image-20210405122145261](https://raw.githubusercontent.com/whr819987540/pic/main/20210405122145.png)
 
 ```python
 figure=plt.figure(figsize=(10,6))
@@ -446,7 +446,7 @@ plt.show()
 
 
 
-![image-20210405110041072](https://gitee.com/hit_whr/pic_2.0/raw/master/20210405110041.png)
+![image-20210405110041072](https://raw.githubusercontent.com/whr819987540/pic/main/20210405110041.png)
 
 
 
@@ -489,7 +489,7 @@ for line in reader:
 
 
 
-![image-20210405125230726](https://gitee.com/hit_whr/pic_2.0/raw/master/20210405125230.png)
+![image-20210405125230726](https://raw.githubusercontent.com/whr819987540/pic/main/20210405125230.png)
 
 
 
@@ -560,7 +560,7 @@ wd.add("pop",code_value)
 wd.render_to_file("pop.svg")
 ```
 
-![image-20210406123314231](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406123321.png)
+![image-20210406123314231](https://raw.githubusercontent.com/whr819987540/pic/main/20210406123321.png)
 
 
 
@@ -568,7 +568,7 @@ wd.render_to_file("pop.svg")
 
 首先得确立一个划分范围，然后将同范围的code_value放到一起，进行一次ad
 
-![image-20210406124734541](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406124734.png)
+![image-20210406124734541](https://raw.githubusercontent.com/whr819987540/pic/main/20210406124734.png)
 
 更改颜色
 
@@ -586,11 +586,11 @@ pygal的样式存储在style中
 > wd=pygal.maps.world.World(style=wd_style,base_style=LightColorizedStyle)
 > ```
 
-![image-20210406144514589](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406144531.png)
+![image-20210406144514589](https://raw.githubusercontent.com/whr819987540/pic/main/20210406144531.png)
 
-![image-20210406144516304](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406144534.png)
+![image-20210406144516304](https://raw.githubusercontent.com/whr819987540/pic/main/20210406144534.png)
 
-![image-20210406144517602](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406144538.png)
+![image-20210406144517602](https://raw.githubusercontent.com/whr819987540/pic/main/20210406144538.png)
 
 
 
@@ -636,19 +636,19 @@ else:
 
 很多API都要求你注册获得API密钥后才能执行API调用。编写本书时，GitHub没有这样的要求，但获得API密钥后，配额将高得多。
 
-![image-20210406151704261](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406151704.png)
+![image-20210406151704261](https://raw.githubusercontent.com/whr819987540/pic/main/20210406151704.png)
 
 
 
 删除`bar.y_labels=stars`前
 
-![image-20210406153011088](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406153011.png)
+![image-20210406153011088](https://raw.githubusercontent.com/whr819987540/pic/main/20210406153011.png)
 
 
 
 后
 
-![image-20210406153022424](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406153022.png)
+![image-20210406153022424](https://raw.githubusercontent.com/whr819987540/pic/main/20210406153022.png)
 
 横线消失了
 
@@ -658,7 +658,7 @@ else:
 
 但是只是`bar.add("",stars)` 似乎不管用，只是把图例变成了空字符串
 
-![image-20210406153237981](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406153238.png)
+![image-20210406153237981](https://raw.githubusercontent.com/whr819987540/pic/main/20210406153238.png)
 
 `show_legend=False`
 
@@ -795,7 +795,7 @@ def render(names,star_des):
     bar.render_to_file("python_code_rank.svg")
 ```
 
-![python_code_rank](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406183413.svg)
+![python_code_rank](https://raw.githubusercontent.com/whr819987540/pic/main/20210406183413.svg)
 
 time.strptime(string,format)p是解析，将string（时间字符串）按照指定的格式format，解析为时间元祖
 
@@ -843,7 +843,7 @@ response_dict.get('descendants', 0)
 
 
 
-![image-20210406195052101](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406195052.png)
+![image-20210406195052101](https://raw.githubusercontent.com/whr819987540/pic/main/20210406195052.png)
 
 
 
@@ -908,7 +908,7 @@ settings.py指定Django如何与你的系统交互以及如何管理项目。在
 
 器网关接口）的首字母缩写。
 
-![image-20210406205109073](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406205109.png)
+![image-20210406205109073](https://raw.githubusercontent.com/whr819987540/pic/main/20210406205109.png)
 
 ## 创建数据库（sqllite)
 
@@ -928,7 +928,7 @@ Django启动一个服务器，让你能够查看系统中的项目，了解它�
 
 URL http://127.0.0.1:8000/表明项目将在你的计算机（即localhost）的端口8000上侦听请求。localhost是一种只处理当前系统发出的请求，而不允许其他任何人查看你正在开发的网页的服务器。
 
-![image-20210406210029600](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406210029.png)
+![image-20210406210029600](https://raw.githubusercontent.com/whr819987540/pic/main/20210406210029.png)
 
 
 
@@ -948,7 +948,7 @@ URL http://127.0.0.1:8000/表明项目将在你的计算机（即localhost）的
 
 在该目录下生成
 
-![image-20210406213039110](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406213039.png)
+![image-20210406213039110](https://raw.githubusercontent.com/whr819987540/pic/main/20210406213039.png)
 
 
 
@@ -989,7 +989,7 @@ class Topic(models.Model):
 
 输出表明Django创建了一个名为0001_initial.py的迁移文件，==这个文件将在数据库中为模型Topic创建一个表。==
 
-![image-20210406214024837](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406214024.png)
+![image-20210406214024837](https://raw.githubusercontent.com/whr819987540/pic/main/20210406214024.png)
 
 最后一行表明learning_logs app在迁移时正常
 
@@ -1001,7 +1001,7 @@ class Topic(models.Model):
 
 ## 注册模型
 
-![image-20210406214547652](https://gitee.com/hit_whr/pic_2.0/raw/master/20210406214547.png)
+![image-20210406214547652](https://raw.githubusercontent.com/whr819987540/pic/main/20210406214547.png)
 
 在应用程序目录下，有admin文件
 
@@ -1149,7 +1149,7 @@ learning_logs是一个命名空间，而index是该命名空间中一个名称�
 
 这样写，在后面的所有网页中都包含了到index（主页）的链接，即使主页的url发生了变动
 
-![image-20210407102644239](https://gitee.com/hit_whr/pic_2.0/raw/master/20210407102644.png)
+![image-20210407102644239](https://raw.githubusercontent.com/whr819987540/pic/main/20210407102644.png)
 
 块标签，子模板中不是需要使用全部的块标签，按需定义并使用
 
@@ -1297,7 +1297,7 @@ as_p表示把form表单在前端页面渲染成p标签的形式展示，此外�
 
 在topic界面每一个entry下面都有一个`edit this entry` 点击后，进入edit_url，然后提交表单，对entry进行更新
 
-![image-20210407200038379](https://gitee.com/hit_whr/pic_2.0/raw/master/20210407200038.png)
+![image-20210407200038379](https://raw.githubusercontent.com/whr819987540/pic/main/20210407200038.png)
 
 from中是action，不是actions
 
@@ -1315,11 +1315,11 @@ method=是单引号，不是双引号
 
 在定义模板的时候，实际上给出了可以自由发挥的地方，没有定义的地方根本不会显示，比如这个
 
-![](https://gitee.com/hit_whr/pic_2.0/raw/master/20210407192339.png)
+![](https://raw.githubusercontent.com/whr819987540/pic/main/20210407192339.png)
 
 结果是：
 
-![image-20210407192403929](https://gitee.com/hit_whr/pic_2.0/raw/master/20210407192403.png)
+![image-20210407192403929](https://raw.githubusercontent.com/whr819987540/pic/main/20210407192403.png)
 
 
 
@@ -1353,7 +1353,7 @@ method=是单引号，不是双引号
 
 应该是登录界面，如果登录完成，记录cookie，就可以跳转到自己的logs界面了
 
-![image-20210407213024556](https://gitee.com/hit_whr/pic_2.0/raw/master/20210407213024.png)
+![image-20210407213024556](https://raw.githubusercontent.com/whr819987540/pic/main/20210407213024.png)
 
 
 
@@ -1373,7 +1373,7 @@ url(r'login/$',LoginView.as_view(template_name='users/login.html'),name="login")
 
 现在随意输入的都无法登录成功
 
-![image-20210407215327112](https://gitee.com/hit_whr/pic_2.0/raw/master/20210407215327.png)
+![image-20210407215327112](https://raw.githubusercontent.com/whr819987540/pic/main/20210407215327.png)
 
 
 
@@ -1407,9 +1407,9 @@ u.save()
 >>> f.save()
 ```
 
-![image-20210407221114420](https://gitee.com/hit_whr/pic_2.0/raw/master/20210407221114.png)
+![image-20210407221114420](https://raw.githubusercontent.com/whr819987540/pic/main/20210407221114.png)
 
-![image-20210407221130264](https://gitee.com/hit_whr/pic_2.0/raw/master/20210407221130.png)
+![image-20210407221130264](https://raw.githubusercontent.com/whr819987540/pic/main/20210407221130.png)
 
 
 
@@ -1417,7 +1417,7 @@ u.save()
 
 如果保存了
 
-![image-20210407221204433](https://gitee.com/hit_whr/pic_2.0/raw/master/20210407221204.png)
+![image-20210407221204433](https://raw.githubusercontent.com/whr819987540/pic/main/20210407221204.png)
 
 
 
@@ -1463,7 +1463,7 @@ UserCreationForm
 
 相当于在topic-entry模型上加了user-topic-entry，将user作为topic的外键
 
-![image-20210408105520973](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408105521.png)
+![image-20210408105520973](https://raw.githubusercontent.com/whr819987540/pic/main/20210408105521.png)
 
 ### 装饰器
 
@@ -1477,7 +1477,7 @@ UserCreationForm
 
 在topics的视图函数（加载数据）前，加上内置的login_required装饰器
 
-![image-20210408111618061](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408111618.png)
+![image-20210408111618061](https://raw.githubusercontent.com/whr819987540/pic/main/20210408111618.png)
 
 让Python在运行topics()的代码前先运行
 
@@ -1503,11 +1503,11 @@ login_required()的代码检查用户是否已登录，仅当用户已登录时�
 
 如果别人知道了站点的结构，那么可以直接访问页面，而不去按照站长定义的规则一步步跳转，这样是危险的，必须给每一个函数都加上装饰器
 
-![image-20210408122432083](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408122432.png)
+![image-20210408122432083](https://raw.githubusercontent.com/whr819987540/pic/main/20210408122432.png)
 
 现在直接访问页面，首先得给出数据，而给出数据之前，首先得执行装饰器，验证是否登录
 
-![image-20210408122838189](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408122838.png)
+![image-20210408122838189](https://raw.githubusercontent.com/whr819987540/pic/main/20210408122838.png)
 
 
 
@@ -1539,7 +1539,7 @@ python manage.py migrate
 
 然后重新打开服务器，重新进入shell
 
-![image-20210408125253346](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408125253.png)
+![image-20210408125253346](https://raw.githubusercontent.com/whr819987540/pic/main/20210408125253.png)
 
 测试一下，用非admin账户添加topic
 
@@ -1574,11 +1574,11 @@ tt test
 
 当前登录admin，tt属于test用户
 
-![image-20210408143053605](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408143053.png)
+![image-20210408143053605](https://raw.githubusercontent.com/whr819987540/pic/main/20210408143053.png)
 
 但是通过url直接访问了，所以在加载topic的时候也需要验证
 
-![image-20210408143111992](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408143112.png)
+![image-20210408143111992](https://raw.githubusercontent.com/whr819987540/pic/main/20210408143112.png)
 
 在显示topic之前，验证topic的owner和request的user
 
@@ -1649,11 +1649,11 @@ auto_time_add是个大bug，只是在创建元素的时候加入时间，而不�
 
 一个bug对于
 
-![image-20210408185940590](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408185940.png)
+![image-20210408185940590](https://raw.githubusercontent.com/whr819987540/pic/main/20210408185940.png)
 
 
 
-![image-20210408185958700](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408185958.png)
+![image-20210408185958700](https://raw.githubusercontent.com/whr819987540/pic/main/20210408185958.png)
 
 
 
@@ -1712,7 +1712,7 @@ STATICFILES_DIRS=[
 
 在app的目录下，建立static/images目录
 
-![image-20210408220929081](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408220929.png)
+![image-20210408220929081](https://raw.githubusercontent.com/whr819987540/pic/main/20210408220929.png)
 
  
 
@@ -1798,6 +1798,6 @@ out_again(1,2,3,4,5,value1="string1",value2=12)
 
 
 
-![image-20210408144338575](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408144338.png)
+![image-20210408144338575](https://raw.githubusercontent.com/whr819987540/pic/main/20210408144338.png)
 
-![](https://gitee.com/hit_whr/pic_2.0/raw/master/20210408144341.png)
+![](https://raw.githubusercontent.com/whr819987540/pic/main/20210408144341.png)

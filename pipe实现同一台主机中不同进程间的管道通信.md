@@ -22,7 +22,7 @@ pipe client连接上来后，就调用ReadFile，也是阻塞自己，直到从�
 
 同时，pipe server发送完后，调用ReadFile，也阻塞了自己，直到管道中有了新的数据，然后打印并回显。
 
-![image-20211108200851456](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211108200851456.png)
+![image-20211108200851456](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211108200851456.png)
 
 
 

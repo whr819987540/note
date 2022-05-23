@@ -609,7 +609,7 @@ __ name __  ，只有在当前文件被执行时，值才是__ main __，也就�
 
 此时再执行using_module_user.py就不会执行user.py里面的那部分代码了
 
-![image-20210328204133857](https://gitee.com/hit_whr/pic_2.0/raw/master/20210328204133.png)
+![image-20210328204133857](https://raw.githubusercontent.com/whr819987540/pic/main/20210328204133.png)
 
 
 

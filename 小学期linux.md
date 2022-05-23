@@ -13,7 +13,7 @@ There is NO WARRANTY, to the extent permitted by law.
 
 ```
 
-![image-20210713160203866](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210713160203866.png)
+![image-20210713160203866](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210713160203866.png)
 
 
 
@@ -116,7 +116,7 @@ Print information about users who are currently logged in.
 
 # 中文乱码问题：
 
-![image-20210713164404779](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210713164404779.png)
+![image-20210713164404779](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210713164404779.png)
 
 ## 常用的字符集
 

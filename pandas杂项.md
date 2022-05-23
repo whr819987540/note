@@ -40,7 +40,7 @@
 
   - 统计series中出现过的值的频率
 
-    ![image-20220406231419839](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220406231419839.png)
+    ![image-20220406231419839](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220406231419839.png)
 
 - jupyter notebook显示所有数据
 

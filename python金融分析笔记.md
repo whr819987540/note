@@ -24,7 +24,7 @@
 
 显示了两个解释器
 
-![image-20210425215058932](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425215059.png)
+![image-20210425215058932](https://raw.githubusercontent.com/whr819987540/pic/main/20210425215059.png)
 
 
 
@@ -32,7 +32,7 @@
 
 一个是创建新项目时的解释器配置，一个是现在环境的解释器配置，make available是对所有之后的项目都默认一个解释器（不推荐）
 
-![image-20210425215206430](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210425215206430.png)
+![image-20210425215206430](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210425215206430.png)
 
 
 
@@ -40,11 +40,11 @@
 
 首先在anaconda的组件里面打开jupyter，会弹出一个cmd窗口，不要关闭
 
-![image-20210425215534345](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425215619.png)
+![image-20210425215534345](https://raw.githubusercontent.com/whr819987540/pic/main/20210425215619.png)
 
 然后默认浏览器弹出窗口
 
-![image-20210425215615879](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425215616.png)
+![image-20210425215615879](https://raw.githubusercontent.com/whr819987540/pic/main/20210425215616.png)
 
 
 
@@ -54,13 +54,13 @@
 
 `jupyter notebook命令`
 
-![image-20210425222052740](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425222052.png)
+![image-20210425222052740](https://raw.githubusercontent.com/whr819987540/pic/main/20210425222052.png)
 
 快捷键：enter+ctrl是运行本代码块；shift+enter是运行本代码块，然后转到下一个代码块
 
 文件类型为ipynb
 
-![image-20210425222132228](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425222132.png)
+![image-20210425222132228](https://raw.githubusercontent.com/whr819987540/pic/main/20210425222132.png)
 
 
 
@@ -76,22 +76,22 @@ python里面内置列表list
 
 - list用,分隔，array用空格分隔
 
-![image-20210425223704675](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425224042.png)
+![image-20210425223704675](https://raw.githubusercontent.com/whr819987540/pic/main/20210425224042.png)
 
 - list只能放一维数据，array可以放多维数据
 
-![image-20210425224134794](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210425224134794.png)
+![image-20210425224134794](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210425224134794.png)
 
 - 进行乘法运算的结果不同，list是进行复制，array是每个元素进行乘法运算
 
-![image-20210425223942869](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425223942.png)
+![image-20210425223942869](https://raw.githubusercontent.com/whr819987540/pic/main/20210425223942.png)
 
 相同点：
 
 - 都可以用下标进行访问
 - 都可以切片（左闭右开）
 
-![image-20210425223857593](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425223857.png)
+![image-20210425223857593](https://raw.githubusercontent.com/whr819987540/pic/main/20210425223857.png)
 
 ## 创建array
 
@@ -105,11 +105,11 @@ b=np.array(list)
 
 #### 一维
 
-![image-20210425224238771](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425224238.png)
+![image-20210425224238771](https://raw.githubusercontent.com/whr819987540/pic/main/20210425224238.png)
 
 #### 二维
 
-![image-20210425224134794](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425224255.png)
+![image-20210425224134794](https://raw.githubusercontent.com/whr819987540/pic/main/20210425224255.png)
 
 ### 利用范围
 
@@ -119,7 +119,7 @@ b=np.array(list)
 
 b=np.arange(start,end,offset)
 
-![image-20210425224509882](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425224509.png)
+![image-20210425224509882](https://raw.githubusercontent.com/whr819987540/pic/main/20210425224509.png)
 
 
 
@@ -127,7 +127,7 @@ b=np.arange(start,end,offset)
 
 b=np.arange(start,end,offset).reshape(rows,columns)
 
-![image-20210425224652471](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425224652.png)
+![image-20210425224652471](https://raw.githubusercontent.com/whr819987540/pic/main/20210425224652.png)
 
 
 
@@ -141,7 +141,7 @@ b=no.random.randn(num)
 
 创建num个符合正态分布的数，而且是array形式
 
-![image-20210425224901288](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425224901.png)
+![image-20210425224901288](https://raw.githubusercontent.com/whr819987540/pic/main/20210425224901.png)
 
 
 
@@ -151,7 +151,7 @@ b=np.random.randint(start,end.(rows,columns))
 
 同样是左闭右开
 
-![image-20210425225027285](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425225027.png)
+![image-20210425225027285](https://raw.githubusercontent.com/whr819987540/pic/main/20210425225027.png)
 
 
 
@@ -177,7 +177,7 @@ b=np.random.randint(start,end.(rows,columns))
 
 a=pd.DataFrame(list)
 
-![image-20210425225548304](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425225548.png)
+![image-20210425225548304](https://raw.githubusercontent.com/whr819987540/pic/main/20210425225548.png)
 
 
 
@@ -185,7 +185,7 @@ a=pd.DataFrame(list)
 
 下面对索引进行自定义，columns和index的值都可以用列表来指定，前提是满足数量关系
 
-![image-20210425225804808](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425225804.png)
+![image-20210425225804808](https://raw.githubusercontent.com/whr819987540/pic/main/20210425225804.png)
 
 
 
@@ -193,13 +193,13 @@ a=pd.DataFrame(list)
 
 df[列名]=list
 
-![image-20210425230055328](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425230055.png)
+![image-20210425230055328](https://raw.githubusercontent.com/whr819987540/pic/main/20210425230055.png)
 
 
 
 ### 用字典创建
 
-![image-20210426180326103](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426180326.png)
+![image-20210426180326103](https://raw.githubusercontent.com/whr819987540/pic/main/20210426180326.png)
 
 
 
@@ -209,13 +209,13 @@ df[列名]=list
 
 pd.dateframe.from_dict(dic,orient=‘index’)
 
-![image-20210426180635836](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426180635.png)
+![image-20210426180635836](https://raw.githubusercontent.com/whr819987540/pic/main/20210426180635.png)
 
 
 
 ### 用二维数组创建
 
-![image-20210426181155660](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426181155.png)
+![image-20210426181155660](https://raw.githubusercontent.com/whr819987540/pic/main/20210426181155.png)
 
 
 
@@ -241,13 +241,13 @@ sheet_name可以是字符串，也可是排序时的顺序，从0开始
 
 a=pd.read_csv(path,delimiter=‘’)第二个参数是指定分隔符，默认为逗号，实际上文件内容里面很多都是逗号
 
-![image-20210426183035860](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426183035.png)
+![image-20210426183035860](https://raw.githubusercontent.com/whr819987540/pic/main/20210426183035.png)
 
 ## 查看文件内容
 
 可以直接打印，不过如果数据太多，也可以用上a.head(line_number)
 
-![image-20210426183157244](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426183157.png)
+![image-20210426183157244](https://raw.githubusercontent.com/whr819987540/pic/main/20210426183157.png)
 
 
 
@@ -255,7 +255,7 @@ a=pd.read_csv(path,delimiter=‘’)第二个参数是指定分隔符，默认�
 
 dataframe.to_excel(path)
 
-![image-20210426183612959](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426183613.png)
+![image-20210426183612959](https://raw.githubusercontent.com/whr819987540/pic/main/20210426183613.png)
 
 
 
@@ -265,7 +265,7 @@ data[start:end]
 
 类似于切片操作，行索引从0开始
 
-![image-20210426184438608](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426184438.png)
+![image-20210426184438608](https://raw.githubusercontent.com/whr819987540/pic/main/20210426184438.png)
 
 
 
@@ -273,25 +273,25 @@ data[start:end]
 
 data.iloc[[1,2]]
 
-![image-20210426184804663](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426184804.png)
+![image-20210426184804663](https://raw.githubusercontent.com/whr819987540/pic/main/20210426184804.png)
 
 ## 读取指定列
 
 直接data[column_name]，不包含列索引
 
-![image-20210426183952464](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426183952.png)
+![image-20210426183952464](https://raw.githubusercontent.com/whr819987540/pic/main/20210426183952.png)
 
 
 
 data[[column_name]]
 
-![image-20210426184141489](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426184141.png)
+![image-20210426184141489](https://raw.githubusercontent.com/whr819987540/pic/main/20210426184141.png)
 
 
 
 多列，同时看到这样返回的是DataFrame类型的
 
-![image-20210426184229584](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426184229.png)
+![image-20210426184229584](https://raw.githubusercontent.com/whr819987540/pic/main/20210426184229.png)
 
 
 
@@ -299,13 +299,13 @@ data[[column_name]]
 
 data.iloc[start:end]\[[column1,column2]]
 
-![image-20210426185138484](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426185138.png)
+![image-20210426185138484](https://raw.githubusercontent.com/whr819987540/pic/main/20210426185138.png)
 
 
 
 data.loc【【rows】，【columns】】
 
-![image-20210426194912537](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426194912.png)
+![image-20210426194912537](https://raw.githubusercontent.com/whr819987540/pic/main/20210426194912.png)
 
 
 
@@ -315,7 +315,7 @@ data.loc【【rows】，【columns】】
 
 
 
-![image-20210426195150874](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426195150.png)
+![image-20210426195150874](https://raw.githubusercontent.com/whr819987540/pic/main/20210426195150.png)
 
 
 
@@ -329,11 +329,11 @@ data.loc【【rows】，【columns】】
 
 先构造code文件，内容为
 
-![image-20210426190103712](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426190103.png)
+![image-20210426190103712](https://raw.githubusercontent.com/whr819987540/pic/main/20210426190103.png)
 
 res.xlsx为空
 
-![image-20210426190146624](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426190146.png)
+![image-20210426190146624](https://raw.githubusercontent.com/whr819987540/pic/main/20210426190146.png)
 
 现在进行读取和写入
 
@@ -433,7 +433,7 @@ print(res)
 res.to_excel("res.xlsx")
 ```
 
-![image-20210426194442091](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426194442.png)
+![image-20210426194442091](https://raw.githubusercontent.com/whr819987540/pic/main/20210426194442.png)
 
 
 
@@ -441,7 +441,7 @@ res.to_excel("res.xlsx")
 
 - data[column].value_counts()计数，column列出现过哪几个值，出现了几次
 
-  ![image-20210426195814232](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426195814.png)
+  ![image-20210426195814232](https://raw.githubusercontent.com/whr819987540/pic/main/20210426195814.png)
 
 - 排序函数。
 
@@ -449,13 +449,13 @@ res.to_excel("res.xlsx")
 
   data.sort_values(by=column,ascending=)
 
-  ![image-20210426200036596](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426200036.png)
+  ![image-20210426200036596](https://raw.githubusercontent.com/whr819987540/pic/main/20210426200036.png)
 
 # 列运算
 
 data[new_coumn]=f(data[column1],data[column2])
 
-![image-20210426200241351](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426200241.png)
+![image-20210426200241351](https://raw.githubusercontent.com/whr819987540/pic/main/20210426200241.png)
 
 # 删除
 
@@ -465,11 +465,11 @@ data.drop(index=[],columns=[],inplace=)
 
 index，columns指定删除的行和列的名称
 
-![image-20210426200549665](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426200549.png)
+![image-20210426200549665](https://raw.githubusercontent.com/whr819987540/pic/main/20210426200549.png)
 
 
 
-![image-20210426200628653](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426200628.png)
+![image-20210426200628653](https://raw.githubusercontent.com/whr819987540/pic/main/20210426200628.png)
 
 # 连接
 
@@ -483,25 +483,25 @@ how是连接方式，比如，left（left outer join），right（right outer jo
 
 假设有两个dataframe
 
-![image-20210426201836836](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426201836.png)
+![image-20210426201836836](https://raw.githubusercontent.com/whr819987540/pic/main/20210426201836.png)
 
 想把他们放在一起
 
 - 要求每个公司都出现，需要分数和股价
 
-  ![](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426201956.png)
+  ![](https://raw.githubusercontent.com/whr819987540/pic/main/20210426201956.png)
 
 - 要求只有公司的分数和股价都不为空
 
-  ![image-20210426202030247](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426202030.png)
+  ![image-20210426202030247](https://raw.githubusercontent.com/whr819987540/pic/main/20210426202030.png)
 
 - 要求必须显示分数
 
-  ![image-20210426202127319](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426202127.png)
+  ![image-20210426202127319](https://raw.githubusercontent.com/whr819987540/pic/main/20210426202127.png)
 
 - 必须显示股价
 
-  ![image-20210426202151169](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426202151.png)
+  ![image-20210426202151169](https://raw.githubusercontent.com/whr819987540/pic/main/20210426202151.png)
 
 
 
@@ -515,17 +515,17 @@ import matplotlib.pyplot as plt
 
 前面提到过，numpy的数组适合对里面的每一个元素进行算术运算，所以都用数组，而不用列表
 
-![image-20210426203718279](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426203718.png)
+![image-20210426203718279](https://raw.githubusercontent.com/whr819987540/pic/main/20210426203718.png)
 
 
 
-![image-20210426203832272](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426203832.png)
+![image-20210426203832272](https://raw.githubusercontent.com/whr819987540/pic/main/20210426203832.png)
 
 直接进行算数运算，很简单
 
 ## 折线图plot
 
-![image-20210426204018466](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426204018.png)
+![image-20210426204018466](https://raw.githubusercontent.com/whr819987540/pic/main/20210426204018.png)
 
 
 
@@ -535,13 +535,13 @@ import matplotlib.pyplot as plt
 
 
 
-![image-20210426204255312](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426204255.png)
+![image-20210426204255312](https://raw.githubusercontent.com/whr819987540/pic/main/20210426204255.png)
 
 
 
 ## 散点图scatter
 
-![image-20210426204508693](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426204508.png)
+![image-20210426204508693](https://raw.githubusercontent.com/whr819987540/pic/main/20210426204508.png)
 
 
 
@@ -551,7 +551,7 @@ np.random.rand(num)返回num个0-1之间的随机数
 
 np.random.randn(num)返回num个符合==标准==正态分布的随机数
 
-![image-20210426205008126](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426205008.png)
+![image-20210426205008126](https://raw.githubusercontent.com/whr819987540/pic/main/20210426205008.png)
 
 
 
@@ -571,11 +571,11 @@ np.random.randn(num)返回num个符合==标准==正态分布的随机数
 
 横轴为区间范围，纵轴为在此范围内出现的次数
 
-![image-20210426205632852](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426205632.png)
+![image-20210426205632852](https://raw.githubusercontent.com/whr819987540/pic/main/20210426205632.png)
 
 看到默认的区间数目效果不好，区间数增加当然划分越精细，但是不能和总的数据量过于接近
 
-![image-20210426205729318](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426205729.png)
+![image-20210426205729318](https://raw.githubusercontent.com/whr819987540/pic/main/20210426205729.png)
 
 
 
@@ -603,9 +603,9 @@ np.random.randn(num)返回num个符合==标准==正态分布的随机数
 
 比如
 
-![image-20210426210546288](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426210546.png)
+![image-20210426210546288](https://raw.githubusercontent.com/whr819987540/pic/main/20210426210546.png)
 
-![image-20210426210705338](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426210705.png)
+![image-20210426210705338](https://raw.githubusercontent.com/whr819987540/pic/main/20210426210705.png)
 
 
 
@@ -621,7 +621,7 @@ np.random.randn(num)返回num个符合==标准==正态分布的随机数
 | area | 面积图 |
 | pie  | 饼图   |
 
-![image-20210426211018531](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426211018.png)
+![image-20210426211018531](https://raw.githubusercontent.com/whr819987540/pic/main/20210426211018.png)
 
 
 
@@ -641,7 +641,7 @@ np.random.randn(num)返回num个符合==标准==正态分布的随机数
 
 就是加上行索引
 
-![image-20210426213707886](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426213707.png)
+![image-20210426213707886](https://raw.githubusercontent.com/whr819987540/pic/main/20210426213707.png)
 
 类似这种东西，我们需要知道A股代码和A股简称的映射关系
 
@@ -681,13 +681,13 @@ print(name)
 
 第一个参数是股票代码，start，end是‘yyyy-mm-dd’格式的日期，返回这个时间段的价格，dataframe格式
 
-![image-20210426221533061](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426221533.png)
+![image-20210426221533061](https://raw.githubusercontent.com/whr819987540/pic/main/20210426221533.png)
 
 ## 重置行索引
 
 dataframe.set_index(column_name,inplace=True)
 
-![image-20210426221706950](https://gitee.com/hit_whr/pic_2.0/raw/master/20210426221707.png)
+![image-20210426221706950](https://raw.githubusercontent.com/whr819987540/pic/main/20210426221707.png)
 
 
 
@@ -729,7 +729,7 @@ plt.rcParams['axes.unicode_minus']=False
 
 源文件是这样的
 
-![image-20210427152614861](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427152621.png)
+![image-20210427152614861](https://raw.githubusercontent.com/whr819987540/pic/main/20210427152621.png)
 
 特点：
 
@@ -739,13 +739,13 @@ plt.rcParams['axes.unicode_minus']=False
 
   应该是和2007那一行的
 
-  ![image-20210427153025765](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427153025.png)
+  ![image-20210427153025765](https://raw.githubusercontent.com/whr819987540/pic/main/20210427153025.png)
 
   
 
 - 如果没有索引列，每次read_excel时，自动添加索引index
 
-  ![image-20210427153201496](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427154128.png)
+  ![image-20210427153201496](https://raw.githubusercontent.com/whr819987540/pic/main/20210427154128.png)
 
 - ==在访问某个单元格时，必须使用data.loc[index,column]的格式，否则不停报错==
 
@@ -753,7 +753,7 @@ plt.rcParams['axes.unicode_minus']=False
 
 - 最后处理结束后，我们输出这个data，还是有index这一行，比较讨厌，需要去除
 
-  ![image-20210427153419925](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427153419.png)
+  ![image-20210427153419925](https://raw.githubusercontent.com/whr819987540/pic/main/20210427153419.png)
 
 
 
@@ -768,7 +768,7 @@ plt.rcParams['axes.unicode_minus']=False
 
 最终的结果为这个，比较符合我们的预期
 
-![image-20210427153926873](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427153926.png)
+![image-20210427153926873](https://raw.githubusercontent.com/whr819987540/pic/main/20210427153926.png)
 
 
 
@@ -845,13 +845,13 @@ print(dfd)
 
 `data.columns`只能看到列的名称
 
-![image-20210427223328996](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427223336.png)
+![image-20210427223328996](https://raw.githubusercontent.com/whr819987540/pic/main/20210427223336.png)
 
 类型转换是
 
 `data[column].astype(typename)`
 
-![image-20210427223422527](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427223422.png)
+![image-20210427223422527](https://raw.githubusercontent.com/whr819987540/pic/main/20210427223422.png)
 
 
 
@@ -861,7 +861,7 @@ print(dfd)
 
 by指根据哪一列排序
 
-![image-20210427223543526](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427223543.png)
+![image-20210427223543526](https://raw.githubusercontent.com/whr819987540/pic/main/20210427223543.png)
 
 现在有一个比较讨厌的，因为源数据没有index，所以在读入后，自动加了index
 
@@ -871,13 +871,13 @@ by指根据哪一列排序
 
 `data.reset_index(drop=True,inplace=True)`
 
-![image-20210427223749587](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427223749.png)
+![image-20210427223749587](https://raw.githubusercontent.com/whr819987540/pic/main/20210427223749.png)
 
 
 
 drop是说是否保留原来的index，如果保留，会将原来的index单独拿出来作为一行，有时候在我们需要回到源数据的排列顺序时比较有用（不过源数据直接inplace=False也可以呀）
 
-![image-20210427223939157](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427223939.png)
+![image-20210427223939157](https://raw.githubusercontent.com/whr819987540/pic/main/20210427223939.png)
 
 同样的，inplace在说是否修改源数据
 
@@ -885,9 +885,9 @@ drop是说是否保留原来的index，如果保留，会将原来的index单独
 
 数据排序好了之后，我们对数据进行写入，同样不写入index
 
-![image-20210427224125398](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427224125.png)
+![image-20210427224125398](https://raw.githubusercontent.com/whr819987540/pic/main/20210427224125.png)
 
-![image-20210427224114071](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427224114.png)
+![image-20210427224114071](https://raw.githubusercontent.com/whr819987540/pic/main/20210427224114.png)
 
 
 
@@ -909,25 +909,25 @@ drop是说是否保留原来的index，如果保留，会将原来的index单独
 
 `data.index`
 
-![image-20210427231022130](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427231022.png)
+![image-20210427231022130](https://raw.githubusercontent.com/whr819987540/pic/main/20210427231022.png)
 
 data.index.tolist
 
-![image-20210427231117675](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427231117.png)
+![image-20210427231117675](https://raw.githubusercontent.com/whr819987540/pic/main/20210427231117.png)
 
 `data.index.tolis()`
 
-![image-20210427231150312](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427231150.png)
+![image-20210427231150312](https://raw.githubusercontent.com/whr819987540/pic/main/20210427231150.png)
 
 `data.loc[i].index.tolist()`
 
-![image-20210427231221115](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427231221.png)
+![image-20210427231221115](https://raw.githubusercontent.com/whr819987540/pic/main/20210427231221.png)
 
 返回的是第index为i的行的columns的名称，相比于直接用`data.columns`返回一堆字符串，这样的list就让调试更加方便了（不用自己手动输入）
 
 由于返回值是list，可以用下标进行访问
 
-![image-20210427231355236](https://gitee.com/hit_whr/pic_2.0/raw/master/20210427231355.png)
+![image-20210427231355236](https://raw.githubusercontent.com/whr819987540/pic/main/20210427231355.png)
 
 ```python
 import pandas as pd

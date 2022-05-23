@@ -514,15 +514,15 @@ mysql> select *from student;
 
   首先看看表名，大小写是区分的。
 
-  ![image-20210423204631839](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423204631.png)
+  ![image-20210423204631839](https://raw.githubusercontent.com/whr819987540/pic/main/20210423204631.png)
 
-  ![image-20210423204754304](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423204754.png)
+  ![image-20210423204754304](https://raw.githubusercontent.com/whr819987540/pic/main/20210423204754.png)
 
 
 
 ​	对于字段名，大小写是不区分的，类似于关键字。
 
-​		![image-20210423204915456](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423204915.png)
+​		![image-20210423204915456](https://raw.githubusercontent.com/whr819987540/pic/main/20210423204915.png)
 
 
 
@@ -534,7 +534,7 @@ mysql> select *from student;
 
   比如，select a,distinct b from table，这就很迷惑，如果b字段有相同的值，那么a取哪一个呢？
 
-  ![image-20210423205501247](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423205501.png)
+  ![image-20210423205501247](https://raw.githubusercontent.com/whr819987540/pic/main/20210423205501.png)
 
 - limit规定显示的记录的条数
 
@@ -542,13 +542,13 @@ mysql> select *from student;
 
   都显示出来。
 
-  ![image-20210423205704897](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423205705.png)
+  ![image-20210423205704897](https://raw.githubusercontent.com/whr819987540/pic/main/20210423205705.png)
 
   分五条显示
 
-  ![image-20210423205751173](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423205751.png)
+  ![image-20210423205751173](https://raw.githubusercontent.com/whr819987540/pic/main/20210423205751.png)
 
-  ![image-20210423205815363](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423205815.png)
+  ![image-20210423205815363](https://raw.githubusercontent.com/whr819987540/pic/main/20210423205815.png)
 
 ​		
 
@@ -560,29 +560,29 @@ mysql> select *from student;
 
   一个列
 
-  ![image-20210423210257062](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423210257.png)
+  ![image-20210423210257062](https://raw.githubusercontent.com/whr819987540/pic/main/20210423210257.png)
 
 
 
 ​		多个列
 
-​			![image-20210423210330797](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423210330.png)
+​			![image-20210423210330797](https://raw.githubusercontent.com/whr819987540/pic/main/20210423210330.png)
 
 ​	现在可以看出来，都是按照升序进行的（默认升序），我们也可以指定为降序（descending）格式为
 
 ​	order by 字段1desc，[字段2]
 
-​	![image-20210423211252727](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423211252.png)
+​	![image-20210423211252727](https://raw.githubusercontent.com/whr819987540/pic/main/20210423211252.png)
 
 ​	
 
-![](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423211257.png)
+![](https://raw.githubusercontent.com/whr819987540/pic/main/20210423211257.png)
 
 - 尽量少使用*，因为会降低查询的效率，而且将所有数据送给app，是不安全而且没有效率的。
 
 - 现在将from，order by，limit三个子句结合起来。比如，找id大小的前三名。首先是from，得知道是哪张表；然后排序，只有排好序了，limit的结果才有意义。
 
-  ![image-20210423211734138](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423211734.png)
+  ![image-20210423211734138](https://raw.githubusercontent.com/whr819987540/pic/main/20210423211734.png)
 
 - 
 
@@ -750,11 +750,11 @@ mysql> select (pid+1)/2 as pid from category;
 
 ` = <= >= <> and or is is not between&and  in not in like is null is not null ()用来显式的指定逻辑运算顺序`
 
-![image-20210423212856110](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423212856.png)
+![image-20210423212856110](https://raw.githubusercontent.com/whr819987540/pic/main/20210423212856.png)
 
 
 
-![image-20210423212746931](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423212747.png)
+![image-20210423212746931](https://raw.githubusercontent.com/whr819987540/pic/main/20210423212747.png)
 
 
 
@@ -762,13 +762,13 @@ mysql> select (pid+1)/2 as pid from category;
 
 ==mysql在执行匹配时不区分大小写，所以与SELECT *FROM customers WHERE cust_country IN ('usa','China')结果相同==
 
-![image-20210423213134919](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423213135.png)
+![image-20210423213134919](https://raw.githubusercontent.com/whr819987540/pic/main/20210423213135.png)
 
 
 
 对于between and，可以看出来，是闭区间
 
-![image-20210423213459401](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423213459.png)
+![image-20210423213459401](https://raw.githubusercontent.com/whr819987540/pic/main/20210423213459.png)
 
 
 
@@ -776,13 +776,13 @@ mysql> select (pid+1)/2 as pid from category;
 
 is null is not null，查看是否为空值，和0、‘’、空格都不一样，后者是有值的，而null是没有显式的指定值。
 
-![image-20210423213915956](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423213916.png)
+![image-20210423213915956](https://raw.githubusercontent.com/whr819987540/pic/main/20210423213916.png)
 
 
 
 选取id在某个集合内的，然后按照id升序，然后名称升序排列
 
-![image-20210423215551728](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423215551.png)
+![image-20210423215551728](https://raw.githubusercontent.com/whr819987540/pic/main/20210423215551.png)
 
 
 
@@ -792,13 +792,13 @@ in依次检索括号内的所有值，而这个值本身是可以由select返回
 
 vendors表中的内容
 
-![image-20210423220146327](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423220146.png)
+![image-20210423220146327](https://raw.githubusercontent.com/whr819987540/pic/main/20210423220146.png)
 
 
 
 products表中的内容
 
-![image-20210423220209109](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423220209.png)
+![image-20210423220209109](https://raw.githubusercontent.com/whr819987540/pic/main/20210423220209.png)
 
 
 
@@ -806,13 +806,13 @@ products表中的内容
 
 `SELECT prod_name FROM products WHERE vend_id IN (SELECT vend_id FROM vendors WHERE vend_state IS NULL)`
 
-![image-20210423220303323](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423220303.png)
+![image-20210423220303323](https://raw.githubusercontent.com/whr819987540/pic/main/20210423220303.png)
 
 
 
 再看看not in（对in否定，取反）
 
-![image-20210423220751844](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423220751.png)
+![image-20210423220751844](https://raw.githubusercontent.com/whr819987540/pic/main/20210423220751.png)
 
 
 
@@ -822,7 +822,7 @@ like的特点就是可以和通配符一起使用
 
 - %，匹配任意数量的任意字符，0，1，2---
 
-  ![image-20210423221848681](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423221848.png)
+  ![image-20210423221848681](https://raw.githubusercontent.com/whr819987540/pic/main/20210423221848.png)
 
 - %不能匹配null
 
@@ -830,7 +830,7 @@ like的特点就是可以和通配符一起使用
 
 - 少用通配符；少在开头使用通配符，减少mysql的工作量
 
-- ![image-20210423222334368](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423222334.png)
+- ![image-20210423222334368](https://raw.githubusercontent.com/whr819987540/pic/main/20210423222334.png)
 
 
 
@@ -842,21 +842,21 @@ like的特点就是可以和通配符一起使用
 
 工作原理是在列的每一个值中进行匹配，如果存在，即返回一整行
 
-![image-20210423224259351](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423224259.png)
+![image-20210423224259351](https://raw.githubusercontent.com/whr819987540/pic/main/20210423224259.png)
 
 
 
 默认不区分大小写，如果非得区分，加上关键字REGEXP BINARY
 
-![image-20210423224328525](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423224328.png)
+![image-20210423224328525](https://raw.githubusercontent.com/whr819987540/pic/main/20210423224328.png)
 
 
 
-![image-20210423224501319](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423224501.png)
+![image-20210423224501319](https://raw.githubusercontent.com/whr819987540/pic/main/20210423224501.png)
 
 
 
-![image-20210423224515602](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423224515.png)
+![image-20210423224515602](https://raw.githubusercontent.com/whr819987540/pic/main/20210423224515.png)
 
 
 
@@ -864,13 +864,13 @@ like的特点就是可以和通配符一起使用
 
 匹配多个串‘string a|string b’
 
-![image-20210423224738425](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423224738.png)
+![image-20210423224738425](https://raw.githubusercontent.com/whr819987540/pic/main/20210423224738.png)
 
 
 
 
 
-![image-20210423224759687](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423224759.png)
+![image-20210423224759687](https://raw.githubusercontent.com/whr819987540/pic/main/20210423224759.png)
 
 
 
@@ -884,17 +884,17 @@ like的特点就是可以和通配符一起使用
 
 清单内是或的关系
 
-![image-20210423225040824](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423225040.png)
+![image-20210423225040824](https://raw.githubusercontent.com/whr819987540/pic/main/20210423225040.png)
 
 
 
-![image-20210423225137999](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423225138.png)
+![image-20210423225137999](https://raw.githubusercontent.com/whr819987540/pic/main/20210423225138.png)
 
 
 
 [abc]或者写成[a-c]
 
-![image-20210423225324790](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423225324.png)
+![image-20210423225324790](https://raw.githubusercontent.com/whr819987540/pic/main/20210423225324.png)
 
 
 
@@ -908,7 +908,7 @@ like的特点就是可以和通配符一起使用
 
 预定义的字符类（类似c的字符类型判断isdigit(),isalpha())
 
-![image-20210424151612880](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424151620.png)
+![image-20210424151612880](https://raw.githubusercontent.com/whr819987540/pic/main/20210424151620.png)
 
 
 
@@ -916,17 +916,17 @@ like的特点就是可以和通配符一起使用
 
 *出现任意次，+出现一次或多次，？出现一次或0次，{n}出现n次，{n，m}出现n次或m次，{n,}出现n次及其以上
 
-![image-20210424151923324](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424151923.png)
+![image-20210424151923324](https://raw.githubusercontent.com/whr819987540/pic/main/20210424151923.png)
 
 
 
-![image-20210424152202193](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424152202.png)
+![image-20210424152202193](https://raw.githubusercontent.com/whr819987540/pic/main/20210424152202.png)
 
 
 
 定位符（^确定以……开头，$确定以……结尾，
 
-![image-20210424152358430](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424152358.png)
+![image-20210424152358430](https://raw.githubusercontent.com/whr819987540/pic/main/20210424152358.png)
 
 
 
@@ -990,7 +990,7 @@ create table table_name
 
 可以将两类数据一起给app，让app来处理。但更好的做法是让数据库给出app需要的数据。
 
-![](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424154057.png)
+![](https://raw.githubusercontent.com/whr819987540/pic/main/20210424154057.png)
 
 
 
@@ -1006,7 +1006,7 @@ so，计算字段指的是不存在于数据库内，在运行时select创建的
 
 字段串拼接函数concat（）
 
-![image-20210424154532806](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424154532.png)
+![image-20210424154532806](https://raw.githubusercontent.com/whr819987540/pic/main/20210424154532.png)
 
 将vend_name和vend_country拼接起来，构成新的字段，as 对这个字段进行命名，方便后续的order by操作。而且，在显示的时候mysql不会用之前的名字（如果有）而是别名
 
@@ -1018,7 +1018,7 @@ so，计算字段指的是不存在于数据库内，在运行时select创建的
 
 和之前select直接测试regexp一样，可以用select计算字段进行实验
 
-![image-20210424155507761](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424155507.png)
+![image-20210424155507761](https://raw.githubusercontent.com/whr819987540/pic/main/20210424155507.png)
 
 
 
@@ -1049,7 +1049,7 @@ https://www.w3schools.com/mysql/func_mysql_dayofweek.asp
 8. substring（target，起始位置-可以为负数，截取的长度）
 9. reverse(target)逆序字符串
 
-![image-20210424155747601](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424155747.png)
+![image-20210424155747601](https://raw.githubusercontent.com/whr819987540/pic/main/20210424155747.png)
 
 
 
@@ -1059,7 +1059,7 @@ https://www.w3schools.com/mysql/func_mysql_dayofweek.asp
 
 
 
-![image-20210424160018041](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424160018.png)
+![image-20210424160018041](https://raw.githubusercontent.com/whr819987540/pic/main/20210424160018.png)
 
 关于soundex，工作流程是，基于单词的发音来给字段的值进行一次映射，那么当发音大概匹配时，就能够返回结果，完成了基于发音的模糊匹配。
 
@@ -1067,7 +1067,7 @@ https://www.w3schools.com/mysql/func_mysql_dayofweek.asp
 
 
 
-![image-20210424160146628](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424160146.png)
+![image-20210424160146628](https://raw.githubusercontent.com/whr819987540/pic/main/20210424160146.png)
 
 
 
@@ -1079,19 +1079,19 @@ https://www.w3schools.com/mysql/func_mysql_dayofweek.asp
 
 1. current_date()返回当前的日期
 
-   ![image-20210424160347564](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424160347.png)
+   ![image-20210424160347564](https://raw.githubusercontent.com/whr819987540/pic/main/20210424160347.png)
 
 2. current_time()返回当前的时间
 
-   ![image-20210424160419536](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424160419.png)
+   ![image-20210424160419536](https://raw.githubusercontent.com/whr819987540/pic/main/20210424160419.png)
 
 3. adddate（date/current_date(),interval year,month,day)
 
-   ![image-20210424160737612](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424160737.png)
+   ![image-20210424160737612](https://raw.githubusercontent.com/whr819987540/pic/main/20210424160737.png)
 
 4. addtime(time/current_time(),’hour:minute:second’)
 
-   ![image-20210424161140005](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424161140.png)
+   ![image-20210424161140005](https://raw.githubusercontent.com/whr819987540/pic/main/20210424161140.png)
 
    
 
@@ -1101,27 +1101,27 @@ https://www.w3schools.com/mysql/func_mysql_dayofweek.asp
 
    更简洁的版本是now
 
-   ![image-20210424161441871](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424161441.png)
+   ![image-20210424161441871](https://raw.githubusercontent.com/whr819987540/pic/main/20210424161441.png)
 
-   ![](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424161927.png)
+   ![](https://raw.githubusercontent.com/whr819987540/pic/main/20210424161927.png)
 
 6. date返回date和time的date部分
 
-   ![image-20210424161532808](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424161532.png)
+   ![image-20210424161532808](https://raw.githubusercontent.com/whr819987540/pic/main/20210424161532.png)
 
 7. time返回time部分
 
-   ![image-20210424161626523](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424161626.png)
+   ![image-20210424161626523](https://raw.githubusercontent.com/whr819987540/pic/main/20210424161626.png)
 
 8. 类似上面的还有year，month，day，hour，minute，second
 
-   ![image-20210424161759068](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424161759.png)
+   ![image-20210424161759068](https://raw.githubusercontent.com/whr819987540/pic/main/20210424161759.png)
 
 9. 计算两个日期的差datediff（）
 
 10. 最后看看星期几dayofweek（date，timestamp）
 
-    ![image-20210424162230316](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424162230.png)
+    ![image-20210424162230316](https://raw.githubusercontent.com/whr819987540/pic/main/20210424162230.png)
 
     为啥是7，今天明明星期6啊？
 
@@ -1139,11 +1139,11 @@ https://www.w3schools.com/mysql/func_mysql_dayofweek.asp
 
 同时，即使我们知道存储的是date类型，为了程序的可移植性，建议将字段转换为date(字段)，防止后来修改为datetime类型
 
-![image-20210424163739279](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424163739.png)
+![image-20210424163739279](https://raw.githubusercontent.com/whr819987540/pic/main/20210424163739.png)
 
 
 
-![image-20210424163915849](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424163915.png)
+![image-20210424163915849](https://raw.githubusercontent.com/whr819987540/pic/main/20210424163915.png)
 
 
 
@@ -1151,19 +1151,19 @@ https://www.w3schools.com/mysql/func_mysql_dayofweek.asp
 
 - 可以用between and
 
-  ![image-20210424164031323](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424164031.png)
+  ![image-20210424164031323](https://raw.githubusercontent.com/whr819987540/pic/main/20210424164031.png)
 
 - 正则
 
-  ![image-20210424164135729](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424164135.png)
+  ![image-20210424164135729](https://raw.githubusercontent.com/whr819987540/pic/main/20210424164135.png)
 
 - lke
 
-  ![image-20210424164301953](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424164302.png)
+  ![image-20210424164301953](https://raw.githubusercontent.com/whr819987540/pic/main/20210424164302.png)
 
 - 年份为2005月份为9
 
-  ![image-20210424164415971](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424164416.png)
+  ![image-20210424164415971](https://raw.githubusercontent.com/whr819987540/pic/main/20210424164416.png)
 
 
 
@@ -1180,9 +1180,9 @@ https://www.w3schools.com/mysql/func_mysql_dayofweek.asp
    2. count(*) ，count(1) 返回字段的行数，不忽略null
 2. sum（字段），此时执行简单的求和操作。也可以是sum(字段的运算组合)
 
-![image-20210424183731208](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424183731.png)
+![image-20210424183731208](https://raw.githubusercontent.com/whr819987540/pic/main/20210424183731.png)
 
-![image-20210424183747197](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424183747.png)
+![image-20210424183747197](https://raw.githubusercontent.com/whr819987540/pic/main/20210424183747.png)
 
 
 
@@ -1236,17 +1236,17 @@ HAVING AVG(studentresult)>70
 
 group by
 
-![image-20210424184641083](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424184641.png)
+![image-20210424184641083](https://raw.githubusercontent.com/whr819987540/pic/main/20210424184641.png)
 
 现在的数据需求是知道每个生产商各生产了多少种产品，也就是将行按照vend_id分组后，对组内的行进行计数
 
-![image-20210424184908856](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424184908.png)
+![image-20210424184908856](https://raw.githubusercontent.com/whr819987540/pic/main/20210424184908.png)
 
 
 
 - group by 允许后面跟多个字段，比如group by(字段1，字段2)也就是对数据先按照字段1进行分组，在此基础上对字段2进行分组。比如先按照院系分组，然后按照班级分组
 
-![image-20210424185251201](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424185251.png)
+![image-20210424185251201](https://raw.githubusercontent.com/whr819987540/pic/main/20210424185251.png)
 
 
 
@@ -1258,21 +1258,21 @@ group by
 
 比如，要找出产品种类超过两种的订单，给出订单号和产品种类数
 
-![image-20210424185807637](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424185807.png)
+![image-20210424185807637](https://raw.githubusercontent.com/whr819987540/pic/main/20210424185807.png)
 
 
 
-![image-20210424190050776](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424190050.png)
+![image-20210424190050776](https://raw.githubusercontent.com/whr819987540/pic/main/20210424190050.png)
 
 
 
 再要求：能够生产两种产品及其以上，并且产品价格都在10以上的生产者
 
-![image-20210424190501803](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424190501.png)
+![image-20210424190501803](https://raw.githubusercontent.com/whr819987540/pic/main/20210424190501.png)
 
 
 
-![image-20210424190732591](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424190732.png)
+![image-20210424190732591](https://raw.githubusercontent.com/whr819987540/pic/main/20210424190732.png)
 
 先过滤价格，然后按照生产者进行分组，最后选出分组中count>=2的结果
 
@@ -1292,25 +1292,25 @@ group by
 
 先找TNT2-》order_num->cust_id->
 
-![image-20210424192251864](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424192251.png)
+![image-20210424192251864](https://raw.githubusercontent.com/whr819987540/pic/main/20210424192251.png)
 
 
 
-![image-20210424192330820](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424192330.png)
+![image-20210424192330820](https://raw.githubusercontent.com/whr819987540/pic/main/20210424192330.png)
 
 
 
-<img src="https://gitee.com/hit_whr/pic_2.0/raw/master/20210424192407.png" alt="image-20210424192407734" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/whr819987540/pic/main/20210424192407.png" alt="image-20210424192407734" style="zoom:67%;" />
 
 
 
-![image-20210424192644798](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424192644.png)
+![image-20210424192644798](https://raw.githubusercontent.com/whr819987540/pic/main/20210424192644.png)
 
 不能用等号，因为子查询的结果可能不为一行，应该是在一个序列里面
 
 用in
 
-![image-20210424192753899](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424192753.png)
+![image-20210424192753899](https://raw.githubusercontent.com/whr819987540/pic/main/20210424192753.png)
 
 
 
@@ -1335,15 +1335,15 @@ WHERE cust_id IN
 
 orders
 
-![image-20210424200230140](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424200230.png)
+![image-20210424200230140](https://raw.githubusercontent.com/whr819987540/pic/main/20210424200230.png)
 
 从customers中得到cust的信息，根据cust_id对orders分组，计数
 
-![image-20210424200518797](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424200518.png)
+![image-20210424200518797](https://raw.githubusercontent.com/whr819987540/pic/main/20210424200518.png)
 
 报错，因为子查询返回的是所有cust_id计数的结果，是多行，我们需要当前cust_id的计数值
 
-![image-20210424200834152](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424200834.png)
+![image-20210424200834152](https://raw.githubusercontent.com/whr819987540/pic/main/20210424200834.png)
 
 
 
@@ -1351,7 +1351,7 @@ orders
 
 所以最终是
 
-![image-20210424200947565](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424200947.png)
+![image-20210424200947565](https://raw.githubusercontent.com/whr819987540/pic/main/20210424200947.png)
 
 
 
@@ -1369,21 +1369,21 @@ customers表->cust_id->order_num->order_item求和
 
 要知道客户信息，需要知道cust_id
 
-![image-20210424194249529](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424194249.png)
+![image-20210424194249529](https://raw.githubusercontent.com/whr819987540/pic/main/20210424194249.png)
 
 在orders里面，有cust_id到order_num的映射
 
-![image-20210424194451025](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424194451.png)
+![image-20210424194451025](https://raw.githubusercontent.com/whr819987540/pic/main/20210424194451.png)
 
 在orderitems里面，可以根据order_num进行计数
 
-<img src="https://gitee.com/hit_whr/pic_2.0/raw/master/20210424194508.png" alt="image-20210424194508264" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/whr819987540/pic/main/20210424194508.png" alt="image-20210424194508264" style="zoom: 67%;" />
 
 
 
 
 
-![image-20210424202218181](https://gitee.com/hit_whr/pic_2.0/raw/master/20210424202218.png)
+![image-20210424202218181](https://raw.githubusercontent.com/whr819987540/pic/main/20210424202218.png)
 
 这个查询其实已经比较复杂了，正确的方法应该是采用渐进的方法逐渐调试，把中间结果都弄准确然后再合并起来。当然，对于中间的一些结果，我们最好不要全都写进去，只要部分结果符合我们的预期即可。然后再将具体的中间结果以子查询代替
 
@@ -1409,11 +1409,11 @@ customers表->cust_id->order_num->order_item求和
 
 联结的过程是，从vendors，products各找一行，过滤条件是两行的vend_id相等
 
-![image-20210425092053217](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425092053.png)
+![image-20210425092053217](https://raw.githubusercontent.com/whr819987540/pic/main/20210425092053.png)
 
 如果没有过滤条件，设vendors里面有m行，products里面有n行，则最终的结果是mxn的笛卡尔积
 
-![image-20210425092416108](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425092416.png)
+![image-20210425092416108](https://raw.githubusercontent.com/whr819987540/pic/main/20210425092416.png)
 
 
 
@@ -1421,7 +1421,7 @@ customers表->cust_id->order_num->order_item求和
 
 inner join
 
-![image-20210425095302933](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425095303.png)
+![image-20210425095302933](https://raw.githubusercontent.com/whr819987540/pic/main/20210425095303.png)
 
 
 
@@ -1431,23 +1431,23 @@ inner join是个啥意思呢？
 
 那么只在符合这个结果（也就是取得交集的时候）时，才进行显示
 
-![image-20210425094042747](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425094042.png)
+![image-20210425094042747](https://raw.githubusercontent.com/whr819987540/pic/main/20210425094042.png)
 
 
 
 left join则是，可以符合这个结果（取得交集）也可以直接在left join左边那个表也就是第一个表中找，当然，这个时候，由于过滤条件不符合，右边的表肯定是返回不了行的，所以与右边行相关的字段都是null
 
-![image-20210425094220843](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425094220.png)
+![image-20210425094220843](https://raw.githubusercontent.com/whr819987540/pic/main/20210425094220.png)
 
-![image-20210425094921453](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425094921.png)
-
-
-
-![image-20210425094933908](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425094934.png)
+![image-20210425094921453](https://raw.githubusercontent.com/whr819987540/pic/main/20210425094921.png)
 
 
 
-![image-20210425095118364](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425095118.png)
+![image-20210425094933908](https://raw.githubusercontent.com/whr819987540/pic/main/20210425094934.png)
+
+
+
+![image-20210425095118364](https://raw.githubusercontent.com/whr819987540/pic/main/20210425095118.png)
 
 公共部分只有1001,1002,1003,1005
 
@@ -1467,7 +1467,7 @@ vendors.vend_id,vendors.vend_name
 
 orderitems.prod_id,orderitems.quantity,orderitems.item_price
 
-![image-20210425101734342](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425101734.png)
+![image-20210425101734342](https://raw.githubusercontent.com/whr819987540/pic/main/20210425101734.png)
 
 
 
@@ -1477,11 +1477,11 @@ orderitems.prod_id,orderitems.quantity,orderitems.item_price
 
 当然，子查询的思路看起来更加清晰。
 
-![image-20210425102822740](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425102822.png)
+![image-20210425102822740](https://raw.githubusercontent.com/whr819987540/pic/main/20210425102822.png)
 
 
 
-![image-20210425102838578](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425102838.png)
+![image-20210425102838578](https://raw.githubusercontent.com/whr819987540/pic/main/20210425102838.png)
 
 
 
@@ -1495,7 +1495,7 @@ orderitems.prod_id,orderitems.quantity,orderitems.item_price
 
 这样写起来十分简洁，而且不容易出错
 
-![image-20210425103454402](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425103454.png)
+![image-20210425103454402](https://raw.githubusercontent.com/whr819987540/pic/main/20210425103454.png)
 
 
 
@@ -1507,13 +1507,13 @@ orderitems.prod_id,orderitems.quantity,orderitems.item_price
 
 - 使用子查询
 
-![image-20210425104215209](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425104215.png)
+![image-20210425104215209](https://raw.githubusercontent.com/whr819987540/pic/main/20210425104215.png)
 
 
 
 - 使用自联结
 
-  ![image-20210425104656998](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425104657.png)
+  ![image-20210425104656998](https://raw.githubusercontent.com/whr819987540/pic/main/20210425104657.png)
 
   先对p2的prod_id进行筛选，得到一个新表，然后将这表和原来的表，比照，得到想要的字段
 
@@ -1521,13 +1521,13 @@ orderitems.prod_id,orderitems.quantity,orderitems.item_price
 
 子查询
 
-![image-20210425105019534](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425105019.png)
+![image-20210425105019534](https://raw.githubusercontent.com/whr819987540/pic/main/20210425105019.png)
 
 自联结
 
-![image-20210425104946349](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425104946.png)
+![image-20210425104946349](https://raw.githubusercontent.com/whr819987540/pic/main/20210425104946.png)
 
-![image-20210425105029980](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425105030.png)
+![image-20210425105029980](https://raw.githubusercontent.com/whr819987540/pic/main/20210425105030.png)
 
 
 
@@ -1547,13 +1547,13 @@ orderitems.prod_id,orderitems.quantity,orderitems.item_price
 
 得到每个客户所下的订单数(在orders表中，cust_id出现几次，就下了几次订单)
 
-![image-20210425150710526](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425150710.png)
+![image-20210425150710526](https://raw.githubusercontent.com/whr819987540/pic/main/20210425150710.png)
 
 
 
 如果想知道所有用户（包括没下单的），要用left join
 
-![image-20210425150753982](https://gitee.com/hit_whr/pic_2.0/raw/master/20210425150754.png)
+![image-20210425150753982](https://raw.githubusercontent.com/whr819987540/pic/main/20210425150754.png)
 
 
 
@@ -1967,11 +1967,11 @@ source path
 
 这种情况下，所有字段必须按照顺序进行赋值，即使有默认值也需要
 
-![image-20210422150751855](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422150751.png)
+![image-20210422150751855](https://raw.githubusercontent.com/whr819987540/pic/main/20210422150751.png)
 
 不指定有默认值的，直接报错
 
-![image-20210422151048073](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422151048.png)
+![image-20210422151048073](https://raw.githubusercontent.com/whr819987540/pic/main/20210422151048.png)
 
 如果指定null，进去的是咱们的null，所以这种情况default没起到作用
 
@@ -1979,7 +1979,7 @@ source path
 
 对于主键，我们知道不允许为空，但是可以自增啊？能不能不赋值？不行，如果不赋值，需要用null告诉mysql，用上一个值自增的值之后的结果。如果赋值，那就是该结果，反正不能空着，否则，当主键不是第一个字段，而是中间的字段时，咋区分呢？
 
-![image-20210422150940382](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422150940.png)
+![image-20210422150940382](https://raw.githubusercontent.com/whr819987540/pic/main/20210422150940.png)
 
 这样是不安全的，当表的结构改变，比如新增了一个字段，之前的插入语句需要改写，移植性比较差
 
@@ -1989,11 +1989,11 @@ source path
 
 前提是至少需要包括所有的not null字段（否则不行）
 
-![image-20210422151629662](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422151629.png)
+![image-20210422151629662](https://raw.githubusercontent.com/whr819987540/pic/main/20210422151629.png)
 
 这里cust_name不允许为空，我们看看不指定这个字段会怎样
 
-![image-20210422151921253](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422151921.png)
+![image-20210422151921253](https://raw.githubusercontent.com/whr819987540/pic/main/20210422151921.png)
 
 报错，cust_name不允许为空，又没有给值
 
@@ -2001,7 +2001,7 @@ source path
 
 对于主键，如果咱们不指定这个字段，是没有问题的，因为主键虽然not null，但是会自增，当我们不指定值时，自动生成。not null的字段必须给值
 
-![image-20210422152411200](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422152411.png)
+![image-20210422152411200](https://raw.githubusercontent.com/whr819987540/pic/main/20210422152411.png)
 
 并且，对于cust_email。由于我们没有指定一个值，mysql会使用默认值，而不是像之前一样被null覆盖
 
@@ -2018,7 +2018,7 @@ source path
 
 ## 多记录插入
 
-![image-20210422153313872](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422153313.png)
+![image-20210422153313872](https://raw.githubusercontent.com/whr819987540/pic/main/20210422153313.png)
 
 这里在values后面跟上了（）,（）
 
@@ -2050,7 +2050,7 @@ table2的主键可能和table1中的某条记录的主键值冲突了，这样�
 
 下面新建一个customer_new表，字段是一样的，然后select除主键外的字段，完成customer到customer_new的复制操作
 
-![image-20210422154355336](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422154355.png)
+![image-20210422154355336](https://raw.githubusercontent.com/whr819987540/pic/main/20210422154355.png)
 
 ## 关于null
 
@@ -2058,17 +2058,17 @@ table2的主键可能和table1中的某条记录的主键值冲突了，这样�
 
 这样在insert或update的时候，可以不指定它的值
 
-![image-20210422163716375](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422163716.png)
+![image-20210422163716375](https://raw.githubusercontent.com/whr819987540/pic/main/20210422163716.png)
 
 
 
-![image-20210422163939695](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422163939.png)
+![image-20210422163939695](https://raw.githubusercontent.com/whr819987540/pic/main/20210422163939.png)
 
 第一条insert没有指定test的值，是(NULL)，为啥要用括号括起来呢？防止插入的字符是NULL。
 
 然后第二条insert，基本操作相同，但是test插入的是空字符，所以没有显示（NULL），这也说明NULL！=空字符串
 
-![image-20210422164118880](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422164118.png)
+![image-20210422164118880](https://raw.githubusercontent.com/whr819987540/pic/main/20210422164118.png)
 
 
 
@@ -2096,11 +2096,11 @@ where(过滤的条件)
 
 比如更新一下cc的数据
 
-![image-20210422160441924](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422160441.png)
+![image-20210422160441924](https://raw.githubusercontent.com/whr819987540/pic/main/20210422160441.png)
 
 
 
-![image-20210422160531400](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422160531.png)
+![image-20210422160531400](https://raw.githubusercontent.com/whr819987540/pic/main/20210422160531.png)
 
 # 删除
 
@@ -2112,15 +2112,15 @@ where（过滤条件）
 
 比如，现在的数据是
 
-![image-20210422160221231](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422160221.png)
+![image-20210422160221231](https://raw.githubusercontent.com/whr819987540/pic/main/20210422160221.png)
 
-![image-20210422160409767](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422160409.png)
+![image-20210422160409767](https://raw.githubusercontent.com/whr819987540/pic/main/20210422160409.png)
 
 
 
 如果是想删除所有的行，那么可以直接使用（truncate table_name)，实际上是drop，然后create一样的表
 
-![image-20210422160740263](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422160740.png)
+![image-20210422160740263](https://raw.githubusercontent.com/whr819987540/pic/main/20210422160740.png)
 
 
 
@@ -2130,11 +2130,11 @@ where（过滤条件）
 
 在update或者delete前，必须先select，看看我们是不是想修改这些数据，确保过滤条件是正确的
 
-![image-20210422160930383](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422160930.png)
+![image-20210422160930383](https://raw.githubusercontent.com/whr819987540/pic/main/20210422160930.png)
 
 
 
-![image-20210422160950145](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422160950.png)
+![image-20210422160950145](https://raw.githubusercontent.com/whr819987540/pic/main/20210422160950.png)
 
 
 
@@ -2156,7 +2156,7 @@ where（过滤条件）
 
 可以直接从auto_increment的值入手，last insert_id返回这个表最后一个auto_increment的值
 
-![image-20210422165316369](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422165316.png)
+![image-20210422165316369](https://raw.githubusercontent.com/whr819987540/pic/main/20210422165316.png)
 
 
 
@@ -2164,19 +2164,19 @@ where（过滤条件）
 
 ## 多重引擎及其特性
 
-![image-20210422165547879](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422165547.png)
+![image-20210422165547879](https://raw.githubusercontent.com/whr819987540/pic/main/20210422165547.png)
 
 
 
 ## 引擎可以混用
 
-![image-20210422165612214](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422165612.png)
+![image-20210422165612214](https://raw.githubusercontent.com/whr819987540/pic/main/20210422165612.png)
 
 
 
 ## 外键不能跨引擎
 
-![image-20210422165720898](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422165720.png)
+![image-20210422165720898](https://raw.githubusercontent.com/whr819987540/pic/main/20210422165720.png)
 
 
 
@@ -2186,13 +2186,13 @@ where（过滤条件）
 
 # show
 
-![image-20210423203414415](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423203421.png)
+![image-20210423203414415](https://raw.githubusercontent.com/whr819987540/pic/main/20210423203421.png)
 
 
 
-![image-20210423203419308](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423203419.png)
+![image-20210423203419308](https://raw.githubusercontent.com/whr819987540/pic/main/20210423203419.png)
 
-![image-20210423203432826](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423203432.png)
+![image-20210423203432826](https://raw.githubusercontent.com/whr819987540/pic/main/20210423203432.png)
 
 
 
@@ -2200,11 +2200,11 @@ where（过滤条件）
 
 show status查看服务器的状态信息
 
-![image-20210423203526798](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423203526.png)
+![image-20210423203526798](https://raw.githubusercontent.com/whr819987540/pic/main/20210423203526.png)
 
 show erros/warnings查看错误或者警告
 
-![image-20210423203641073](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423203641.png)
+![image-20210423203641073](https://raw.githubusercontent.com/whr819987540/pic/main/20210423203641.png)
 
 
 
@@ -2212,9 +2212,9 @@ show erros/warnings查看错误或者警告
 
 show create database/table name
 
-![image-20210423203810566](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423203810.png)
+![image-20210423203810566](https://raw.githubusercontent.com/whr819987540/pic/main/20210423203810.png)
 
-![](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423203813.png)
+![](https://raw.githubusercontent.com/whr819987540/pic/main/20210423203813.png)
 
 
 
@@ -2224,7 +2224,7 @@ show grants[for user_name]
 
 如果没有for，默认显示所有用户的权限
 
-![image-20210423203921643](https://gitee.com/hit_whr/pic_2.0/raw/master/20210423203921.png)
+![image-20210423203921643](https://raw.githubusercontent.com/whr819987540/pic/main/20210423203921.png)
 
 命令行下用help show查看show的命令
 
@@ -2375,7 +2375,7 @@ mysql -u root -P 3306 -h 47.105.91.11 -p
 
 用的是mysql administrator，感觉界面不如sqlyog
 
-![image-20210422130005269](https://gitee.com/hit_whr/pic_2.0/raw/master/20210422130005.png)
+![image-20210422130005269](https://raw.githubusercontent.com/whr819987540/pic/main/20210422130005.png)
 
 还是用sqlyog把
 
@@ -2873,7 +2873,7 @@ Query OK, 0 rows affected (0.00 sec)
 mysql>
 ```
 
-![image-20210723150314841](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210723150314841.png)
+![image-20210723150314841](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210723150314841.png)
 
 服务器上也一样
 

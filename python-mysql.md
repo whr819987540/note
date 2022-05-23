@@ -57,11 +57,11 @@ create table if not exists SC
 );
 ```
 
-![image-20210530200904072](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210530200904072.png)
+![image-20210530200904072](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210530200904072.png)
 
 
 
-![image-20210530200906957](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210530200906957.png)
+![image-20210530200906957](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210530200906957.png)
 
 
 
@@ -403,7 +403,7 @@ with connect:
 
 而saddr的类型是varchar，威海这个组汉字必须用引号包起来
 
-![image-20210614112730316](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210614112730316.png)
+![image-20210614112730316](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210614112730316.png)
 
 
 
@@ -421,7 +421,7 @@ with connect:
 
 
 
-![image-20210614113932605](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210614113932605.png)
+![image-20210614113932605](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210614113932605.png)
 
 
 
@@ -511,11 +511,11 @@ error
 
 有了这些后，就可以编写处理数据的槽函数了。
 
-![image-20210614160957379](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210614160957379.png)
+![image-20210614160957379](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210614160957379.png)
 
 
 
-![image-20210614161008405](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210614161008405.png)
+![image-20210614161008405](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210614161008405.png)
 
 入口函数
 
@@ -580,7 +580,7 @@ xxx
 
 begin【开启事务】
 
-![image-20210620104202810](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210620104202810.png)
+![image-20210620104202810](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210620104202810.png)
 
 进行插入操作
 
@@ -594,7 +594,7 @@ begin【开启事务】
 
 如果回滚
 
-![image-20210620104331508](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210620104331508.png)
+![image-20210620104331508](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210620104331508.png)
 
 再次查询时，不会看到之前的插入记录
 

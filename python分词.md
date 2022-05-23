@@ -73,7 +73,7 @@ Prefix dict has been built successfully.
 
 添加自定义词汇
 
-![image-20210714204252866](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210714204252866.png)
+![image-20210714204252866](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210714204252866.png)
 
 ```python
 import jieba
@@ -120,7 +120,7 @@ with open(" 第1章 地狱灵芝.txt",'r',encoding="utf-8") as f:
 print(string)
 ```
 
-![image-20210715090214501](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210715090214501.png)
+![image-20210715090214501](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210715090214501.png)
 
 
 
@@ -136,7 +136,7 @@ seg_string=jieba.cut(string)
 print("/".join(seg_string))
 ```
 
-![image-20210715090446160](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210715090446160.png)
+![image-20210715090446160](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210715090446160.png)
 
 
 
@@ -512,7 +512,7 @@ for i in file_list:
 
 运行结果是这样的
 
-![image-20210715161711218](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210715161711218.png)
+![image-20210715161711218](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210715161711218.png)
 
 但是这个图里面，很多词语都没有实际含义，需要去掉（类似于前面去掉标点符号）
 
@@ -530,7 +530,7 @@ for i in analysis.items():
 analysis.to_excel("1.xlsx")
 ```
 
-![image-20210715165247330](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210715165247330.png)
+![image-20210715165247330](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210715165247330.png)
 
 
 

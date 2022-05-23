@@ -176,31 +176,31 @@ print("-----------")
 
 ## 案例1
 
- ![image-20210725100515152](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725100515152.png)
+ ![image-20210725100515152](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725100515152.png)
 
  
 
 ## 案例2
 
- ![image-20210725101442887](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725101442887.png)
+ ![image-20210725101442887](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725101442887.png)
 
  
 
 ## 案例3
 
-![image-20210725102444703](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725102444703.png)
+![image-20210725102444703](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725102444703.png)
 
 
 
 ## 案例4
 
-![image-20210725103041681](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725103041681.png)
+![image-20210725103041681](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725103041681.png)
 
 
 
 ## 案例5
 
-![image-20210725104943062](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210725104943062.png)
+![image-20210725104943062](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210725104943062.png)
 
 # 总结分析
 

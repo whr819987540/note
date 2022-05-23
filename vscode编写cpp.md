@@ -4,7 +4,7 @@ vscode编写cpp
 
 一开始没有隐藏文件，即没有配置文件
 
-![image-20211108224248278](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211108224248278.png)
+![image-20211108224248278](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211108224248278.png)
 
 # 生成配置文件
 
@@ -12,7 +12,7 @@ vscode编写cpp
 
 点击查看->命令面板，输入edit configurations（UI）
 
-![](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211108224355645.png)
+![](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211108224355645.png)
 
 
 
@@ -22,9 +22,9 @@ vscode编写cpp
 
 如果修改了PATH，应该重启vscode
 
-![image-20211109153757990](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211109153757990.png)
+![image-20211109153757990](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211109153757990.png)
 
-![image-20211108224422265](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211108224422265.png)
+![image-20211108224422265](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211108224422265.png)
 
 ```bash
 {
@@ -58,17 +58,17 @@ tasks.json这个配置文件里面放的是如何编译的信息，产生该文�
 
 输入configure default built task 
 
-![image-20211108224537053](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211108224537053.png)
+![image-20211108224537053](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211108224537053.png)
 
 
 
 然后选择g++编译器
 
-![image-20211108224657024](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211108224657024.png)
+![image-20211108224657024](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211108224657024.png)
 
 
 
-![image-20211108224710514](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211108224710514.png)
+![image-20211108224710514](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211108224710514.png)
 
 ```cpp
 {
@@ -147,15 +147,15 @@ tasks.json这个配置文件里面放的是如何编译的信息，产生该文�
 
   这个配置文件里面放的是如何进行调试的信息。
 
-![image-20211109162111931](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211109162111931.png)
+![image-20211109162111931](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211109162111931.png)
 
 
 
 选择GDB调试
 
-![image-20211109162247442](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211109162247442.png)
+![image-20211109162247442](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211109162247442.png)
 
-![image-20211109162328612](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211109162328612.png)
+![image-20211109162328612](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211109162328612.png)
 
 
 

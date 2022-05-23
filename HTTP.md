@@ -13,21 +13,21 @@ Host: www.baidu.com
 
 ## 自然语言描述
 
-![image-20210908222626050](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210908222626050.png)
+![image-20210908222626050](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210908222626050.png)
 
 
 
 ## 形式化（ABNF范式）
 
-![image-20210908222718248](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210908222718248.png)
+![image-20210908222718248](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210908222718248.png)
 
 
 
-![image-20210908222742765](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210908222742765.png)
+![image-20210908222742765](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210908222742765.png)
 
 
 
-![image-20210908222943185](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210908222943185.png)
+![image-20210908222943185](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210908222943185.png)
 
 
 
@@ -58,11 +58,11 @@ header-name:[SP]header-value/r/n
 
 # OSI
 
-![image-20210908223336003](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210908223336003.png)
+![image-20210908223336003](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210908223336003.png)
 
 
 
-![image-20210908223512401](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210908223512401.png)
+![image-20210908223512401](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210908223512401.png)
 
 
 
@@ -74,7 +74,7 @@ header-name:[SP]header-value/r/n
 
 ## 功能决定形式
 
-![image-20210908225202558](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210908225202558.png)
+![image-20210908225202558](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210908225202558.png)
 
 
 
@@ -92,7 +92,7 @@ JavaScript的执行放在本地：提高用户交互体验
 
 ## 问题
 
-![image-20210908225713831](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210908225713831.png)
+![image-20210908225713831](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210908225713831.png)
 
 
 

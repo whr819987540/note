@@ -6,7 +6,7 @@ If you cannot access the panel,
 release the following panel port [8888] in the security group
 若无法访问面板，请检查防火墙/安全组是否有放行面板[8888]端口
 
-![image-20210311124910259](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311124910259.png)
+![image-20210311124910259](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311124910259.png)
 
 Linux服务器端操作系统
 稳定性，不需要界面，需要便利的操作
@@ -443,7 +443,7 @@ shutdown -r 10/now
 
 ..用来指代上一级目录
 
-![image-20210311094652474](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311094652474.png)
+![image-20210311094652474](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311094652474.png)
 
 ## ls: 列出目录
 
@@ -461,11 +461,11 @@ cd -跳转到上一次所在的目录
 
 可能当前工作目录只是一个快捷方式
 
-![image-20210311104439827](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311104439827.png)
+![image-20210311104439827](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311104439827.png)
 
 bin是根据/usr/bin创建的link
 
-![image-20210311104550006](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311104550006.png)
+![image-20210311104550006](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311104550006.png)
 
 ## mkdir：创建一个新的目录
 
@@ -481,11 +481,11 @@ cp -options 【sourc1，source2】 des
 
   如果是目录，在非空的情况下，-r。
 
-  ![image-20210311103721645](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311103721645.png)
+  ![image-20210311103721645](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311103721645.png)
 
 
 
-​		![image-20210311103809382](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311103809382.png)
+​		![image-20210311103809382](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311103809382.png)
 
 
 
@@ -499,7 +499,7 @@ cp -options 【sourc1，source2】 des
 
   用上-p，发现二者相同
 
-  ![image-20210311103436983](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311103436983.png)
+  ![image-20210311103436983](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311103436983.png)
 
   
 
@@ -550,7 +550,7 @@ find 搜索路径 -options 参数
 
 切换至底线命令模式，w保存，q退出
 
-![1](https://gitee.com/hit_whr/pic_2.0/raw/master/1.png)
+![1](https://raw.githubusercontent.com/whr819987540/pic/main/1.png)
 
 ## 命令模式的快捷键（区分大小写,数字不能是小键盘的）
 
@@ -639,11 +639,11 @@ systemctl enable nginx  将nginx设置为自启
 
 nginx -> /www/server/nginx/sbin/nginx:;
 
-![image-20210311150655046](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311150655046.png)
+![image-20210311150655046](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311150655046.png)
 
 首先，没安装上（不是没配置好）时的界面是这样的，为了这个截图，我把nginx又卸载了一遍
 
-![image-20210311151652692](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311151652692.png)
+![image-20210311151652692](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311151652692.png)
 
 开始安装yum install nginx
 
@@ -762,7 +762,7 @@ userdel name
 
 无法删除/home/name与/var/spool/mail/
 
-![image-20210313103232989](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210313103232989.png)
+![image-20210313103232989](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210313103232989.png)
 
 
 
@@ -776,7 +776,7 @@ name失去了登录权限
 
 可以`userdel -r name`将配置文件和登录权限都删除干净
 
-![image-20210313104102748](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210313104102748.png)
+![image-20210313104102748](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210313104102748.png)
 
 
 
@@ -866,7 +866,7 @@ yum是一个软件包管理器，能够进行依赖关系管理，需要联网
   - .x86_64，即win平台的x64t架构
   - yum list py*
 
-  ![image-20210313112128661](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210311124910259.png)
+  ![image-20210313112128661](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210311124910259.png)
 
 - \6. 删除软件包命令：**yum remove <package_name>**
 
@@ -970,7 +970,7 @@ a,b,c是或的关系
 
 
 
-![image-20210916164713358](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210916164713358.png)
+![image-20210916164713358](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210916164713358.png)
 
 
 

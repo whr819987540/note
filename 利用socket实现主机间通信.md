@@ -18,7 +18,7 @@ server的accept发现有tcp连接到来，建立连接后创建connect_sock()，
 
 client多次调用recv，如果出错，退出；否则，知道recv的返回值为0，即server断开了连接。然后client对收到的数据进行回显。
 
-![image-20211108215340597](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211108215340597.png)
+![image-20211108215340597](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211108215340597.png)
 
 ## 感悟
 

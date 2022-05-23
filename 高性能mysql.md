@@ -114,11 +114,11 @@ show variables like "datadir";
 
 - .frm文件中定义了表的结构
 
-![image-20220218182758823](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220218182758823.png)
+![image-20220218182758823](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220218182758823.png)
 
 
 
-![image-20220218182805569](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220218182805569.png)
+![image-20220218182805569](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220218182805569.png)
 
 
 

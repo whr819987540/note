@@ -10,13 +10,13 @@ One of the most popular VCS tools was a system called RCS, which is still distri
 
 记住修改，然后把修改整合起来，形成新的文件，即version
 
-![image-20210315214126340](https://gitee.com/hit_whr/picgo/raw/master/image-20210315214126340.png)
+![image-20210315214126340](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210315214126340.png)
 
 有个问题，无法协作
 
 所以有了centralized VCS
 
-![image-20210315214451431](https://gitee.com/hit_whr/picgo/raw/master/image-20210315214451431.png)
+![image-20210315214451431](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210315214451431.png)
 
 
 
@@ -30,7 +30,7 @@ snapshot快照[(1 封私信 / 78 条消息) 快照与备份有什么区别？快
 
 快照原理，将当前虚拟机的虚拟硬盘文件锁定，不再更改，之后新建一个文件，之后所有更改都放到新建的文件中，读取时，优先读取这个中的，没有的话在读取锁定中的数据。所以快照占的空间取决于你做了多少更改
 
-![image-20210315220117757](https://gitee.com/hit_whr/picgo/raw/master/image-20210315221709978.png)
+![image-20210315220117757](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210315221709978.png)
 
 
 
@@ -48,7 +48,7 @@ The major difference between Git and any other VCS (Subversion and friends inclu
 
 基于增量进行复制，如果project中的某个文件改变了，ok，是一次改变，对project进行重新复制，成为另一个version。做了很多无用的工作
 
-![image-20210315221709978](https://gitee.com/hit_whr/picgo/raw/master/image-20210315220117757.png)
+![image-20210315221709978](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210315220117757.png)
 
 
 
@@ -56,7 +56,7 @@ Git doesn’t think of or store its data this way. Instead, Git thinks of its da
 
 如果文件没有发生改变，Git不会再存储一遍，只会告诉你一个reference，指向之前那个一模一样的文件
 
-![image-20210315221846368](https://gitee.com/hit_whr/picgo/raw/master/areas.png)
+![image-20210315221846368](https://raw.githubusercontent.com/whr819987540/pic/main/areas.png)
 
 另一个好处是，不用频繁去找服务器取数据，project就在本地，直接修改；并且，如果断网了，因为本地有文件，所以还可以工作。
 
@@ -94,7 +94,7 @@ Pay attention now — here is the main thing to remember about Git if you wa
 
 This leads us to the three main sections of a Git project: the working tree, the staging area, and the Git directory.
 
-![Working tree, staging area, and Git directory.](https://gitee.com/hit_whr/picgo/raw/master/image-20210315221846368.png)
+![Working tree, staging area, and Git directory.](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210315221846368.png)
 
 Figure 6. Working tree, staging area, and Git directory
 
@@ -118,7 +118,7 @@ If a particular version of a file is in the Git directory, it’s considered *co
 
 
 
-![image-20210315224632407](https://gitee.com/hit_whr/picgo/raw/master/image-20210315224632407.png)
+![image-20210315224632407](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210315224632407.png)
 
 首先在英文中portable是便携的意思，那么在软件中也是一样，portable版表示软件不需要安装，只要双击就可以打开使用。避免了安装软件的麻烦，也可以让软件不住系统中写入过多的文件，达到干净、绿色的目的。
 
@@ -142,7 +142,7 @@ C:\Program Files\Git\etc\gitconfig是全局配置文件
 
 > git config --list
 
-![image-20210316101203594](https://gitee.com/hit_whr/picgo/raw/master/image-20210316111200760.png)
+![image-20210316101203594](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316111200760.png)
 
 查看配置文件的位置
 
@@ -186,7 +186,7 @@ The first thing you should do when you install Git is to ==set your user name an
 
 > git config user.name
 
-![image-20210316104824661](https://gitee.com/hit_whr/picgo/raw/master/image-20210316101203594.png)
+![image-20210316104824661](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316101203594.png)
 
 一开始配置文件
 
@@ -290,7 +290,7 @@ By the end of the chapter, you should be able to configure and initialize a repo
 
 1. 进入一个本地目录（没有被版本控制，即目录中没有.git文件）
 
-![image-20210316111200760](https://gitee.com/hit_whr/picgo/raw/master/image-20210316104824661.png)
+![image-20210316111200760](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316104824661.png)
 
 1. 创建一个次级目录，里面有仓库文件。但是！该目录中任何文件都没有被track
 
@@ -298,9 +298,9 @@ By the end of the chapter, you should be able to configure and initialize a repo
 
 This creates a new subdirectory named `.git` that contains all of your necessary repository files — a Git repository skeleton.
 
-![image-20210316111213097](https://gitee.com/hit_whr/picgo/raw/master/image-20210316111213097.png)
+![image-20210316111213097](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316111213097.png)
 
-![image-20210316111225314](https://gitee.com/hit_whr/picgo/raw/master/image-20210316111225314.png)
+![image-20210316111225314](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316111225314.png)
 
 3. track某个文件
 
@@ -310,9 +310,9 @@ This creates a new subdirectory named `.git` that contains all of your necessary
 >
 > git commit -m ”Initial project version”
 
-![image-20210316111303318](https://gitee.com/hit_whr/picgo/raw/master/image-20210316122406457.png)
+![image-20210316111303318](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316122406457.png)
 
-![image-20210316111738663](https://gitee.com/hit_whr/picgo/raw/master/image-20210316111738663.png)
+![image-20210316111738663](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316111738663.png)
 
 
 
@@ -345,15 +345,15 @@ Git receives a full copy of nearly all data that the server has. Every version o
 
 That creates a directory named `libgit2`, initializes a `.git` directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version.
 
-![image-20210316122406457](https://gitee.com/hit_whr/picgo/raw/master/image-20210316122429719.png)
+![image-20210316122406457](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316122429719.png)
 
 
 
-![image-20210316122420256](https://gitee.com/hit_whr/picgo/raw/master/image-20210316122420256.png)
+![image-20210316122420256](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316122420256.png)
 
 
 
-![image-20210316122429719](https://gitee.com/hit_whr/picgo/raw/master/image-20210316124412198.png)
+![image-20210316122429719](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316124412198.png)
 
 
 
@@ -365,9 +365,9 @@ That creates a directory named `libgit2`, initializes a `.git` directory inside 
 
 假设采用的是`git clone`，ok，现在有了一个仓库，查看仓库中文件的状态`git status`
 
-![image-20210316124412198](https://gitee.com/hit_whr/picgo/raw/master/image-20210316111303318.png)
+![image-20210316124412198](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316111303318.png)
 
-![image-20210316124500983](https://gitee.com/hit_whr/picgo/raw/master/image-20210316124706856.png)
+![image-20210316124500983](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316124706856.png)
 
 
 
@@ -376,7 +376,7 @@ That creates a directory named `libgit2`, initializes a `.git` directory inside 
 - 本例中，是clone来了，对git而言，所有文件都是最近一次快照的一部分，是tracked，unmodified
 - 如果新建一个文件 `echo 'this is a test'>a.txt`
 
-![image-20210316124706856](https://gitee.com/hit_whr/picgo/raw/master/image-20210316124500983.png)
+![image-20210316124706856](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316124500983.png)
 
 对于git而言，不会自动track这个文件，如图所示，untracked->tracked&&staged
 
@@ -386,7 +386,7 @@ That creates a directory named `libgit2`, initializes a `.git` directory inside 
 
 - untracked->tracked&&staged  `git add file_name`
 
-![image-20210316125341700](https://gitee.com/hit_whr/picgo/raw/master/image-20210316141150383.png)
+![image-20210316125341700](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316141150383.png)
 
 从最后一条可以看出，确实是staged了，因为git提示可以unstage
 
@@ -398,7 +398,7 @@ The `git add` command takes a path name for either a file or a directory; if it�
 
 > git commit -a //直接提交 -m message
 
-![image-20210316141150383](https://gitee.com/hit_whr/picgo/raw/master/image-20210316125341700.png)
+![image-20210316141150383](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316125341700.png)
 
 
 
@@ -406,7 +406,7 @@ The `git add` command takes a path name for either a file or a directory; if it�
 
 对前面的a.txt文件进行编辑后，发现a.txt由unmodified，变为modified，而且系统提示将它暂存起来
 
-![image-20210316142040976](https://gitee.com/hit_whr/picgo/raw/master/image-20210316142040976.png)
+![image-20210316142040976](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316142040976.png)
 
 “Changes not staged for commit” — which means that a file that is tracked has been modified in the working directory but not yet staged. 
 
@@ -418,11 +418,11 @@ To stage it, you run the `git add` command. `git add` is a multipurpose command�
 >
 > so，add 可以理解为add file to the ==stage area==
 
-![image-20210316142658632](https://gitee.com/hit_whr/picgo/raw/master/image-20210316142658632.png)
+![image-20210316142658632](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316142658632.png)
 
 可以看出，现在已经是在stage area了，然后`git commit`即可
 
-![image-20210316143045536](https://gitee.com/hit_whr/picgo/raw/master/image-20210316144257643.png)
+![image-20210316143045536](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316144257643.png)
 
 
 
@@ -461,7 +461,7 @@ M:staged(green),modified(red)
 
 ??:untracked
 
-![image-20210316144257643](https://gitee.com/hit_whr/picgo/raw/master/image-20210316143045536.png)
+![image-20210316144257643](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316143045536.png)
 
 New files that aren’t tracked have a `??` next to them, new files that have been added to the staging area have an `A`, modified files have an `M` and so on. There are two columns to the output — the left-hand column indicates the status of the staging area and the right-hand column indicates the status of the working tree. So for example in that output, the `README` file is modified in the working directory but not yet staged, while the `lib/simplegit.rb` file is modified and staged. The `Rakefile` was modified, staged and then modified again, so there are changes to it that are both staged and unstaged.
 
@@ -469,7 +469,7 @@ New files that aren’t tracked have a `??` next to them, new files that have be
 
 所以a是staged，to be committed；b是modified；c是untracked
 
-![image-20210316145259302](https://gitee.com/hit_whr/picgo/raw/master/image-20210316145259302.png)
+![image-20210316145259302](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316145259302.png)
 
 #### 查看状态时ignore
 
@@ -485,7 +485,7 @@ The first line tells Git to ignore any files ending in “.o” or “.a” �
 
 需要注意的是，.gitignore默认在add某个文件前生效，所以如果在gitignore存在前，某个文件就已经add了，git status里面仍然有这个文件。此时，gitignore只对后面再创建的文件有效
 
-![image-20210316211549616](https://gitee.com/hit_whr/picgo/raw/master/image-20210316211549616.png)
+![image-20210316211549616](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316211549616.png)
 
 解决方法：
 
@@ -557,19 +557,19 @@ status 只能看到modified之后的文件结果，而不能看到做出了什�
 
 - 创建1.txt 2.txt，写入内容，然后add，commit。恢复到tracked,unmodified状态
 
-![image-20210316183856485](https://gitee.com/hit_whr/picgo/raw/master/image-20210316183856485.png)
+![image-20210316183856485](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316183856485.png)
 
-![image-20210316183942738](https://gitee.com/hit_whr/picgo/raw/master/image-20210316184757622.png)
+![image-20210316183942738](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316184757622.png)
 
 - 修改1.txt的内容，add，修改2.txt的内容。1.txt- staged，2.txt- modified
 
-![image-20210316184547762](https://gitee.com/hit_whr/picgo/raw/master/image-20210316183942738.png)
+![image-20210316184547762](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316183942738.png)
 
 - 利用`git diff`查看内容的变化
 
-![image-20210316184718897](https://gitee.com/hit_whr/picgo/raw/master/image-20210316184718897.png)
+![image-20210316184718897](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316184718897.png)
 
-![image-20210316184757622](https://gitee.com/hit_whr/picgo/raw/master/image-20210316185816042.png)
+![image-20210316184757622](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316185816042.png)
 
 >  To see what you’ve changed but not yet staged, type `git diff` with no other arguments:
 
@@ -585,13 +585,13 @@ That command compares what is in your working directory with what is in your sta
 
 - 对1.txt 2.txt都add，commit，然后对2.txt进行修改：删除line 2，增加line2，不add
 
-![image-20210316185816042](https://gitee.com/hit_whr/picgo/raw/master/image-20210316190505413.png)
+![image-20210316185816042](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316190505413.png)
 
 可以看到有+-两种符号，表示增删
 
 - 重复上述操作：修改2.txt，modified，not add
 
-![image-20210316190505413](https://gitee.com/hit_whr/picgo/raw/master/image-20210316194418423.png)
+![image-20210316190505413](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316194418423.png)
 
 发现只显示了当前工作目录和stage area的区别
 
@@ -601,7 +601,7 @@ That command compares what is in your working directory with what is in your sta
 
 graphical对git diff的变化内容进行图形化的显示：
 
-![image-20210316191840427](https://gitee.com/hit_whr/picgo/raw/master/image-20210316191840427.png)
+![image-20210316191840427](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316191840427.png)
 
 #### git commit
 
@@ -621,7 +621,7 @@ For an even more explicit reminder of what you’ve modified, you can pass the `
 
 > 最终的结果类似git commit+git diff
 
-![image-20210316194418423](https://gitee.com/hit_whr/picgo/raw/master/image-20210316200115363.png)
+![image-20210316194418423](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316200115363.png)
 
 显示的结果包括：
 
@@ -657,7 +657,7 @@ git rm
 
 要从git中移除一个文件，不能只是从看到的目录中delete（从working directory中删除）。如果这样，git将`从working directory中直接删除` 视为modified，so，这些文件将处于`changes not staged for commit` 
 
-![image-20210316200115363](https://gitee.com/hit_whr/picgo/raw/master/image-20210316204230718.png)
+![image-20210316200115363](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316204230718.png)
 
 那么问题来了，这些文件是modified，unstaged，但源文件在working area中已经不可见了，如何将空文件放入stage area中，然后commit？（空文件commit视为删除）
 
@@ -672,17 +672,17 @@ If you simply remove the file from your working directory, it shows up under the
 
 > git rm LICEMSE
 
-![image-20210316204230718](https://gitee.com/hit_whr/picgo/raw/master/image-20210316184547762.png)
+![image-20210316204230718](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316184547762.png)
 
 作用是将某个文件的remove放到stage area，那么还需要commit操作
 
-![image-20210316204557785](https://gitee.com/hit_whr/picgo/raw/master/image-20210316204654568.png)
+![image-20210316204557785](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316204654568.png)
 
 
 
 然后查看，发现那些文件确实没了
 
-![image-20210316204654568](https://gitee.com/hit_whr/picgo/raw/master/image-20210316204557785.png)
+![image-20210316204654568](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316204557785.png)
 
 ```bash
 user@DESKTOP-GU58S2D MINGW64 ~/py_snake_game (master)
@@ -735,7 +735,7 @@ Another useful thing you may want to do is to keep the file in your working tree
 
 
 
-![image-20210316205916025](https://gitee.com/hit_whr/picgo/raw/master/image-20210316205916025.png)
+![image-20210316205916025](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210316205916025.png)
 
 
 
@@ -920,7 +920,7 @@ The key's randomart image is:
 # 在gitee或github中配置ssh秘钥
 ```
 
-![image-20211026200022613](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20211026200022613.png)
+![image-20211026200022613](https://raw.githubusercontent.com/whr819987540/pic/main/image-20211026200022613.png)
 
 
 
@@ -955,11 +955,11 @@ git push -u origin master -f
 
 - system，所有用户下的所有仓库
 
-![image-20220106220402069](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106220402069.png)
+![image-20220106220402069](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220106220402069.png)
 
 - global，当前用户的所有仓库
 
-![image-20220106220916531](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106220916531.png)
+![image-20220106220916531](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220106220916531.png)
 
 这里的默认分支为main分支，是一般习惯。（之前用的master分支）
 
@@ -1004,11 +1004,11 @@ init.defaultbranch=main
 
 #### 编辑器
 
-![image-20220106221330696](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106221330696.png)
+![image-20220106221330696](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220106221330696.png)
 
 
 
-![image-20220106221343507](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106221343507.png)
+![image-20220106221343507](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220106221343507.png)
 
 ### 一个细节
 
@@ -1231,7 +1231,7 @@ Changes to be committed:
  delete mode 100644 2.txt
 ```
 
-![image-20220106235238248](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220106235238248.png)
+![image-20220106235238248](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220106235238248.png)
 
 
 
@@ -1306,7 +1306,7 @@ Untracked files:
 
 
 
-![image-20220107165849633](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107165849633.png)
+![image-20220107165849633](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220107165849633.png)
 
 
 
@@ -1360,13 +1360,13 @@ Mode                 LastWriteTime         Length Name
 2.sh
 ```
 
-![image-20220107170435353](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107170435353.png)
+![image-20220107170435353](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220107170435353.png)
 
 
 
 首先修改.gitignore文件，发现2.sh还是在staging area。需要用git rm --cached将其移出
 
-![image-20220107170458044](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107170458044.png)
+![image-20220107170458044](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220107170458044.png)
 
 ```bash
 (base) PS E:\idm下载\test_git> git status
@@ -1618,13 +1618,13 @@ git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
 
 查看working directory和staging area的区别。
 
-![image-20220107192250217](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107192250217.png)
+![image-20220107192250217](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220107192250217.png)
 
 
 
 左侧是staging area（旧版本），右侧是working directory（新版本）
 
-![image-20220107192339153](https://gitee.com/hit_whr/pic_2.0/raw/main/image-20220107192339153.png)
+![image-20220107192339153](https://raw.githubusercontent.com/whr819987540/pic/main/image-20220107192339153.png)
 
 
 

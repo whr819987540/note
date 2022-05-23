@@ -745,7 +745,7 @@ fmt.Println(len(ch_list[0]))//12
 
 utf-8下，中文字符为三个字节
 
-![image-20210323112825447](https://gitee.com/hit_whr/pic_2.0/raw/master/image-20210323112825447.png)
+![image-20210323112825447](https://raw.githubusercontent.com/whr819987540/pic/main/image-20210323112825447.png)
 
 string是只读的slic，不能修改内容
 
@@ -1055,7 +1055,7 @@ func main(){
 
   os.Exit(n int)需要一个整数作为退出时的状态码
 
-  ![image-20210326095848392](https://gitee.com/hit_whr/pic_2.0/raw/master/20210326095855.png)
+  ![image-20210326095848392](https://raw.githubusercontent.com/whr819987540/pic/main/20210326095855.png)
 
 - os.Exit退出时不调用栈的信息
 
@@ -1063,7 +1063,7 @@ func main(){
 
 先看看程序执行的顺序：panic->defer
 
-![image-20210326100212325](https://gitee.com/hit_whr/pic_2.0/raw/master/20210326100212.png)
+![image-20210326100212325](https://raw.githubusercontent.com/whr819987540/pic/main/20210326100212.png)
 
 - 在defer里面的recover，返回当前的错误，对错误进行判断，然后进行补救
   defer func(){
@@ -1075,7 +1075,7 @@ func main(){
   后来还是会有，会继续出现
   有时不如重启然后退出
 
-![image-20210326100442891](https://gitee.com/hit_whr/pic_2.0/raw/master/20210326100443.png)
+![image-20210326100442891](https://raw.githubusercontent.com/whr819987540/pic/main/20210326100443.png)
 
 
 
@@ -1180,15 +1180,15 @@ main.go:3:8: package my_func is not in GOROOT (C:\Program Files\Go\src\my_func)
 
 并且只能go build（生成可执行文件在当前文件夹内）
 
-![image-20210326132708687](https://gitee.com/hit_whr/pic_2.0/raw/master/20210326132715.png)
+![image-20210326132708687](https://raw.githubusercontent.com/whr819987540/pic/main/20210326132715.png)
 
 
 
 对于没有main的文件，执行go build
 
-![image-20210326132809963](https://gitee.com/hit_whr/pic_2.0/raw/master/20210326132810.png)
+![image-20210326132809963](https://raw.githubusercontent.com/whr819987540/pic/main/20210326132810.png)
 
-![image-20210326184654580](https://gitee.com/hit_whr/pic_2.0/raw/master/20210326184701.png)
+![image-20210326184654580](https://raw.githubusercontent.com/whr819987540/pic/main/20210326184701.png)
 
 没有exe文件，因为它本身就只有函数，没有入口函数，无法执行
 
@@ -1247,9 +1247,9 @@ func main()  {
 
 
 
-![image-20210326211930271](https://gitee.com/hit_whr/pic_2.0/raw/master/20210326211930.png)
+![image-20210326211930271](https://raw.githubusercontent.com/whr819987540/pic/main/20210326211930.png)
 
-![image-20210326211923228](https://gitee.com/hit_whr/pic_2.0/raw/master/20210326211940.png)
+![image-20210326211923228](https://raw.githubusercontent.com/whr819987540/pic/main/20210326211940.png)
 
 
 
